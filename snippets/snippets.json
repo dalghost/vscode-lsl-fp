@@ -66,6 +66,8 @@
         "description": "Define USE_SWITCHES Preprocessor"
     },
 
+
+
     "Define Preprocessor": {
         "prefix": "#define",
         "body": [
@@ -155,6 +157,7 @@
         "description": "Include Preprocessor"
     },
 
+
     
     "__FILE__ Preprocessor": {
         "prefix": "__FILE__",
@@ -214,6 +217,7 @@
     },
 
 
+
     "Float Type": {
         "prefix": "float",
         "body": [
@@ -264,6 +268,9 @@
         "description": "Vector Type"
     },
 
+
+
+
     "Rotation Value": {
         "prefix": "rv",
         "body": [
@@ -278,6 +285,9 @@
         ],
         "description": "Vector Value"
     },
+
+
+
 
     "Label": {
         "prefix": "label",
@@ -405,6 +415,9 @@
         ],
         "description": "Function"
     },
+
+
+
     "State-Change": {
         "prefix": "statechange",
         "body": [
@@ -432,7 +445,392 @@
         ],
         "description": "Default"
     },
-    
+
+
+
+    "attack Event": {
+        "prefix": "attach",
+        "body": [
+            "attach( key ${1:id} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered in an object when the object attaches or detaches from agent.\n• key id – the avatar if attached, if not attached NULL_KEY."
+    },
+    "at_rot_target Event": {
+        "prefix": "at_rot_target",
+        "body": [
+            "at_rot_target( integer ${1:handle}, rotation ${2:targetrot}, rotation ${4:ourrot} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of llRotTarget library function call\n• integer handle – llRotTarget return\n• rotation targetrot – llRotTarget rot parameter\n• rotation ourrot – current rotation (similar to llGetRot)"
+    },
+    "at_target Event": {
+        "prefix": "at_target",
+        "body": [
+            "at_target( integer ${1:tnum}, vector ${2:targetpos}, vector ${3:ourpos} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of llTarget library function call\n• integer tnum – llTarget return\n• vector targetpos – llTarget position parameter\n• vector ourpos – current position (similar to llGetPos)"
+    },
+    "changed Event": {
+        "prefix": "changed",
+        "body": [
+            "changed( integer ${1:change} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Various changes to the object/prim trigger this event.\n• integer change – bit field of CHANGED_* flags\nMultiple changes can be represented in a single event, so use bitwise arithmetic."
+    },
+    "collision Event": {
+        "prefix": "collision",
+        "body": [
+            "collision( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered while task is colliding with another task.\n• integer num_detected"
+    },
+    "collision_end Event": {
+        "prefix": "collision_end",
+        "body": [
+            "collision_end( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task stops colliding with another task\n• integer num_detected"
+    },
+    "collision_start Event": {
+        "prefix": "collision_start",
+        "body": [
+            "collision_start( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task starts colliding with another task\n• integer num_detected"
+    },
+    "control Event": {
+        "prefix": "control",
+        "body": [
+            "control( key ${1:id}, integer ${2:level}, integer ${3:edge} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of llTakeControls library function call and user input.\n• key id – avatar UUID\n• integer level – bitfield of CONTROL_* flags, non-zero while one or more keys is being held down.\n• integer edge – bitfield of CONTROL_* flags, non-zero when one or more keys have been just pressed or released."
+    },
+    "dataserver Event": {
+        "prefix": "dataserver",
+        "body": [
+            "dataserver( key ${1:queryid}, string ${2:data} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task receives asynchronous data\n• key queryid – matches the return of the requesting function\n• string data – the requested data (cast as a string as necessary)."
+    },
+    "email Event": {
+        "prefix": "email",
+        "body": [
+            "email( string ${1:time}, string ${2:address}, string ${3:subject}, string ${4:message}, integer ${num_left} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered as a result of calling llGetNextEmail where there is a matching email in the email queue.\n• string time – In the (string)llGetUnixTime format • string address\n• string subject\n• string message\n• integer num_left – The number of emails remaining in the email queue.\nThe email queue is associated with the prim and any script in the prim can access it.\nThe prim's email address is its key with \"@lsl.secondlife.com\" appended, llGetKey() + \"@lsl.secondlife.com\"."
+    },
+    "experience_permissions Event": {
+        "prefix": "experience_permissions",
+        "body": [
+            "experience_permissions( key ${1:agent_id} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "The agent has approved an experience permissions request. This may be through interaction with the experience permission dialog or the experience profile, or automatically if the agent has previously approved the experience.\n• key agent_id – avatar UUID approving permission"
+    },
+    "experience_permissions_denied Event": {
+        "prefix": "experience_permissions_denied",
+        "body": [
+            "experience_permissions_denied( key ${1:agent_id}, integer ${2:reason} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Event ID The agent has denied experience permission. \n• key agent_id – avatar UUID that denied permission. \n• integer reason – Reason for denial; one of the Experience Tools XP_ERROR_* errors flags.\nThis event may be generated in many cases:\n In response to a call to llRequestExperiencePermissions if any of the following is true:\n  The agent does not respond to the experience permission dialog. This will happen after a long delay if the agent is running a viewer which doesn't understand the request or if the agent has blocked the object.\n  The agent selects \"Block Experience\" in the experience permission dialog.\n  The agent has previously blocked the experience through another experience permission dialog or through the experience profile.\n  An attachment is asking for permission from an agent other than its owner.\n  The experience cannot run on the region because it is blocked or exceeds the maturity rating of the region.\n The experience can no longer run:\n  The script has moved to a region where the experience cannot run because it is blocked or it exceeds the maturity rating of the region.\n  The script has moved to a parcel where it is blocked or not allowed.\n  The agent has blocked the experience from the experience profile."
+    },
+    "http_request Event": {
+        "prefix": "http_request",
+        "body": [
+            "http_request( key ${1:request_id}, string ${2:method}, string ${3:body} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task receives an HTTP request.\n• key request_id – HTTP request id for response use, and function response identification.\n• string method – \"GET\", \"POST\", \"PUT\", \"DELETE\", URL_REQUEST_GRANTED, URL_REQUEST_DENIED\n• string body – Contents of the request."
+    },
+    "http_response Event": {
+        "prefix": "http_response",
+        "body": [
+            "http_response( key ${1:request_id}, integer ${2:status}, list ${3:metadata}, string ${4:body} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task receives a response to one of its llHTTPRequests\n• key request_id – Matches return from llHTTPRequest\n• integer status – HTTP status code (like 404 or 200)\n• list metadata – List of HTTP_* constants and attributes\n• string body"
+    },
+    "land_collision Event": {
+        "prefix": "land_collision",
+        "body": [
+            "land_collision( vector ${1:pos} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered in the root when physical object or attached avatar is colliding with land\n• vector pos – position of collision with the ground"
+    },
+    "land_collision_end Event": {
+        "prefix": "land_collision_end",
+        "body": [
+            "land_collision_end( vector ${1:pos} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered in the root when a physical object or attached avatar stops colliding with land\n• vector pos – position of last collision with the ground"
+    },
+    "land_collision_start Event": {
+        "prefix": "land_collision_start",
+        "body": [
+            "land_collision_start( vector ${1:pos} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered in the root when a physical object or attached avatar starts colliding with land\n• vector pos – position of collision with the ground"
+    },
+    "link_message Event": {
+        "prefix": "link_message",
+        "body": [
+            "link_message( integer ${1:sender_num}, integer ${2:num}, string ${3:str}, key ${4:id} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "29 Event ID Triggered when the script receives a link message that was sent by a call to llMessageLinked. llMessageLinked is used to send messages from one script to another.\n• integer sender_num – The link number of the prim that contained the script that called llMessageLinked.\n• integer num – Second parameter of the llMessageLinked call.\n• string str – The message that was sent from the script that called llMessageLinked.\n• key id – Fourth parameter of the llMessageLinked call.\nid is often used as a second string field (in LSL the key type is implemented as a string with just custom operators). Typecasting between string and key types has no effect on the data contained. The sizes of str and id are only limited by available script memory."
+    },
+    "listen Event": {
+        "prefix": "listen",
+        "body": [
+            "listen( integer ${1:channel}, string ${2:name}, string ${3:message} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered by chat, use llListen to enable and filter\n• integer channel – channel that the message appeared on.\n• string name – prim name or avatar Legacy Name\n• key id – group, avatar or prim UUID\n• string message – text spoken"
+    },
+    "money Event": {
+        "prefix": "money",
+        "body": [
+            "money( key ${1:id}, integer ${2:amount} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Security Warning!\n\nTriggered when money is paid to the prim in the amount by id.\n• key id – who paid\n• integer amount – the amount paid"
+    },
+    "moving_end Event": {
+        "prefix": "moving_end",
+        "body": [
+            "moving_end()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task stops moving"
+    },
+    "moving_start Event": {
+        "prefix": "moving_start",
+        "body": [
+            "moving_start()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task begins moving"
+    },
+    "not_at_rot_target Event": {
+        "prefix": "not_at_rot_target",
+        "body": [
+            "not_at_rot_target()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of llRotTarget library function call"
+    },
+    "not_at_target Event": {
+        "prefix": "not_at_target",
+        "body": [
+            "not_at_target()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered if an object has not yet reached the target set by the call to llTarget.\nThis event may be triggered multiple times if the target has not been reached."
+    },
+    "no_sensor Event": {
+        "prefix": "no_sensor",
+        "body": [
+            "no_sensor()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of a call to llSensor or llSensorRepeat."
+    },
+    "object_rez Event": {
+        "prefix": "object_rez",
+        "body": [
+            "object_rez( key ${1:id} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when the object rezzes an object.\n• key id – UUID of object rezzed."
+    },
+    "on_rez Event": {
+        "prefix": "on_rez",
+        "body": [
+            "on_rez( integer ${1:start_param})",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when an object is rezzed (by script or by user). Also triggered in attachments when a user logs in, or when the object is attached from inventory.\n• integer start_param – parameter supplied to llRezObject or llRezAtRoot\nstart_param is always zero when an object is not rezzed by llRezObject or llRezAtRoot.\nWhen an object is rezzed by llRezObject or llRezAtRoot, then start_param will be the value given as the last parameter of the rezzing command.\nstart_param is available at any subsequent time by calling llGetStartParameter (unless it has been overridden by llRemoteLoadScriptPin)."
+    },
+    "path_update Event": {
+        "prefix": "path_update",
+        "body": [
+            "path_update( integer ${1:type}, list ${2:reserved} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Event description goes here.\n• integer type – A PU_*, it's the path event type\n• list reserved – Reserved; not currently used."
+    },
+    "remote_data Event": {
+        "prefix": "remote_data",
+        "body": [
+            "remote_data( integer ${1:event_type}, key ${2:channel}, key ${3:message_id}, string ${4:sender}, integer ${5:idata}, string ${6:sdata} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered by various XML-RPC calls.\n• integer event_type\n• key channel\n• key message_id\n• string sender\n• integer idata\n• string sdata"
+    },
+    "run_time_permissions Event": {
+        "prefix": "run_time_permissions",
+        "body": [
+            "run_time_permissions( integer ${1:perm} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when an agent grants run time permissions to this script.\n• integer perm – mask of PERMISSIONS_* flags granting permissions"
+    },
+    "sensor Event": {
+        "prefix": "sensor",
+        "body": [
+            "sensor( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Results from a call to either llSensor or llSensorRepeat.\n• integer num_detected – number of objects/avatars found\nThe results are ordered from nearest to furthest.\nnum_detected is always greater than zero, the no_sensor event is triggered if no objects/avatars were found."
+    },
+    "state_entry Event": {
+        "prefix": "state_entry",
+        "body": [
+            "state_entry()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered on any state transition and startup"
+    },
+    "state_exit Event": {
+        "prefix": "state_exit",
+        "body": [
+            "state_exit()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered on a qualifying state transition."
+    },
+    "timer Event": {
+        "prefix": "timer",
+        "body": [
+            "timer()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Repeats the code in the timer(). Result of the llSetTimerEvent library function call."
+    },
+    "touch Event": {
+        "prefix": "touch",
+        "body": [
+            "touch( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered whilst an agent is clicking the task. It will continue to be triggered until the the prim/object is stopped being clicked (it triggers multiple times). Triggered on touch start, each minimum event delay while held, and touch end.\n• integer num_detected"
+    },
+    "touch_end Event": {
+        "prefix": "touch_end",
+        "body": [
+            "touch_end( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when agent stops clicking on task\n• integer num_detected"
+    },
+    "touch_start Event": {
+        "prefix": "touch_start",
+        "body": [
+            "touch_start( integer ${1:num_detected} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered by the start of agent clicking on task\b• integer num_detected – Number of agents detected touching during the last clock cycle"
+    },
+    "transaction_result Event": {
+        "prefix": "transaction_result",
+        "body": [
+            "transaction_result( key ${1:id}, integer ${2:success} , string ${3:data} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered when task receives asynchronous data\n• key id – matches the return of the llTransfer* function\n• integer success – TRUE if the transfer succeeded otherwise FALSE.\n• string data – On successful transactions this will contain a CSV of information pertaining to the transaction. In failure, a string will be returned matching one of the error tags below."
+    },
+
+
+
     "llSetPrimitiveParams": {
         "prefix": "llSetPrimitiveParams",
         "body": [
@@ -636,7 +1034,7 @@
         "body": [
            "llGetColor(${1:face})$0"
         ],
-        "description": "vector llGetColor( integer face );\n\n 52 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the color on face.\n• integer face – face number or ALL_SIDES\nIf face is ALL_SIDES then the function returns the average color of all the faces on the prim.[1]"
+        "description": "vector llGetColor( integer face );\n\n 52 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the color on face.\n• integer face – face number or ALL_SIDES\nIf face is ALL_SIDES then the function returns the average color of all the faces on the prim."
     },
     "llDetectedType": {
         "prefix": "llDetectedType",
@@ -762,7 +1160,7 @@
         "body": [
            "llGetAlpha(${1:face})$0"
         ],
-        "description": "float llGetAlpha( integer face );\n\n 50 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the alpha of face.\n• integer face – face number or ALL_SIDES\nIf face is ALL_SIDES then the function returns the sum of alpha of all the faces on the prim, range [0, sides][1].\nOtherwise the return is in the range [0, 1], with 0.0 being fully transparent and 1.0 being fully solid.\n"
+        "description": "float llGetAlpha( integer face );\n\n 50 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the alpha of face.\n• integer face – face number or ALL_SIDES\nIf face is ALL_SIDES then the function returns the sum of alpha of all the faces on the prim, range [0, sides].\nOtherwise the return is in the range [0, 1], with 0.0 being fully transparent and 1.0 being fully solid.\n"
     },
     "llApplyImpulse": {
         "prefix": "llApplyImpulse",
@@ -930,7 +1328,7 @@
         "body": [
            "llGetRegionTimeDilation()$0"
         ],
-        "description": "float llGetRegionTimeDilation( );\n\n 227 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the current time dilation, the value range is [0.0, 1.0], 0.0 (full dilation) and 1.0 (no dilation).[1]It is used as the ratio between the change of script time to that of real world time.\n"
+        "description": "float llGetRegionTimeDilation( );\n\n 227 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the current time dilation, the value range is [0.0, 1.0], 0.0 (full dilation) and 1.0 (no dilation).It is used as the ratio between the change of script time to that of real world time.\n"
     },
     "llGetRegionSunDirection": {
         "prefix": "llGetRegionSunDirection",
@@ -1007,14 +1405,14 @@
         "body": [
            "llAcos(${1:val})$0"
         ],
-        "description": "float llAcos( float val );\n\n 172 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the arccosine in radians of val\n• float val – must fall in the range [-1.0, 1.0]\nThe returned value is in the range [0.0, PI][1]\n"
+        "description": "float llAcos( float val );\n\n 172 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the arccosine in radians of val\n• float val – must fall in the range [-1.0, 1.0]\nThe returned value is in the range [0.0, PI]\n"
     },
     "llGetObjectPrimCount": {
         "prefix": "llGetObjectPrimCount",
         "body": [
            "llGetObjectPrimCount(${1:prim})$0"
         ],
-        "description": "integer llGetObjectPrimCount( key prim );\n\n 323 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns an integer that is the total number of prims in the object that contains prim.\n• key prim – prim UUID that is in the same region\nAvatars sitting on the object are not counted[1]. Zero is returned if prim: (A) is not found, (B) is part of an attachment[2], or (C) is not a prim.\n"
+        "description": "integer llGetObjectPrimCount( key prim );\n\n 323 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns an integer that is the total number of prims in the object that contains prim.\n• key prim – prim UUID that is in the same region\nAvatars sitting on the object are not counted. Zero is returned if prim: (A) is not found, (B) is part of an attachment, or (C) is not a prim.\n"
     },
     "llGetScriptState": {
         "prefix": "llGetScriptState",
@@ -1091,7 +1489,7 @@
         "body": [
            "llRemoteLoadScriptPin(${1:target}, ${2:name}, ${3:pin}, ${4:running}, ${5:start_param});$0"
         ],
-        "description": "llRemoteLoadScriptPin( key target, string name, integer pin, integer running, integer start_param );\n\n 253 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nCopy script name into target and set to running with a start_param only if target's pin matches pin\n• key target – prim UUID that is in the same region\n• string name – a script in the inventory of the prim this script is in\n• integer pin – Must match pin set by llSetRemoteScriptAccessPin\n• integer running – boolean, if TRUE[1] the script is set as running, if FALSE the script is not set as running\n• integer start_param – value returned by llGetStartParameter in the target script.\nOnly works if the script owner can modify target.\n"
+        "description": "llRemoteLoadScriptPin( key target, string name, integer pin, integer running, integer start_param );\n\n 253 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nCopy script name into target and set to running with a start_param only if target's pin matches pin\n• key target – prim UUID that is in the same region\n• string name – a script in the inventory of the prim this script is in\n• integer pin – Must match pin set by llSetRemoteScriptAccessPin\n• integer running – boolean, if TRUE the script is set as running, if FALSE the script is not set as running\n• integer start_param – value returned by llGetStartParameter in the target script.\nOnly works if the script owner can modify target.\n"
     },
     "llGetObjectDesc": {
         "prefix": "llGetObjectDesc",
@@ -1273,7 +1671,7 @@
         "body": [
            "llFrand(${1:mag})$0"
         ],
-        "description": "float llFrand( float mag );\n\n 8 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is pseudo random in the range [0.0, mag) or (mag, 0.0].[1] This means that the returned value can be any value in the range 0.0 to mag including 0.0, but not including the value of mag itself. The sign of mag matches the return.\n• float mag – Any valid float valueWhen converting the float to an integer, be sure to use an integer typecast (integer) and not one of the rounding functions (llRound, llFloor, llCeil). The integer typecast is the only method guaranteed not to skew the distribution of integer values."
+        "description": "float llFrand( float mag );\n\n 8 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is pseudo random in the range [0.0, mag) or (mag, 0.0]. This means that the returned value can be any value in the range 0.0 to mag including 0.0, but not including the value of mag itself. The sign of mag matches the return.\n• float mag – Any valid float valueWhen converting the float to an integer, be sure to use an integer typecast (integer) and not one of the rounding functions (llRound, llFloor, llCeil). The integer typecast is the only method guaranteed not to skew the distribution of integer values."
     },
     "llGetTimeOfDay": {
         "prefix": "llGetTimeOfDay",
@@ -1371,14 +1769,14 @@
         "body": [
            "llSetPos(${1:pos});$0"
         ],
-        "description": "llSetPos( vector pos );\n\n 58 Function ID\n 0.2 Forced Delay\n 10.0 Energy\n\nMoves the object or primitive towards pos without using physics.\n• vector pos – position in region or local coordinates depending upon the situation (see #Specification).\nMovement is capped to 10m per call for unattached root prims.[1]\n"
+        "description": "llSetPos( vector pos );\n\n 58 Function ID\n 0.2 Forced Delay\n 10.0 Energy\n\nMoves the object or primitive towards pos without using physics.\n• vector pos – position in region or local coordinates depending upon the situation (see #Specification).\nMovement is capped to 10m per call for unattached root prims.\n"
     },
     "llSetPhysicsMaterial": {
         "prefix": "llSetPhysicsMaterial",
         "body": [
            "llSetPhysicsMaterial(${1:mask}, ${2:gravity_multiplier}, ${3:restitution}, ${4:friction}, ${5:density});$0"
         ],
-        "description": "llSetPhysicsMaterial( integer mask, float gravity_multiplier, float restitution, float friction, float density );\n\n ? Function ID\n  Forced Delay\n  Energy\n\nUsed to set the physical characteristics of an object.\n• integer mask – bitwise combination of DENSITY, FRICTION, RESTITUTION, and GRAVITY_MULTIPLIER and specifies which floats to actually apply\n• float gravity_multiplier – range [-1.0, +28.0], default: 1.0\n• float restitution – range [0.0, 1.0], default: [0.3, 0.9] [1]\n• float friction – range [0.0, 255.0], default: [0.2, 0.9][1]\n• float density – range [1.0, 22587.0] kg/m^3, default: 1000.0\nThe default values for friction and restitution depend upon the material type."
+        "description": "llSetPhysicsMaterial( integer mask, float gravity_multiplier, float restitution, float friction, float density );\n\n ? Function ID\n  Forced Delay\n  Energy\n\nUsed to set the physical characteristics of an object.\n• integer mask – bitwise combination of DENSITY, FRICTION, RESTITUTION, and GRAVITY_MULTIPLIER and specifies which floats to actually apply\n• float gravity_multiplier – range [-1.0, +28.0], default: 1.0\n• float restitution – range [0.0, 1.0], default: [0.3, 0.9] \n• float friction – range [0.0, 255.0], default: [0.2, 0.9]\n• float density – range [1.0, 22587.0] kg/m^3, default: 1000.0\nThe default values for friction and restitution depend upon the material type."
     },
     "llList2Key": {
         "prefix": "llList2Key",
@@ -1714,7 +2112,7 @@
         "body": [
            "llSetScale(${1:size});$0"
         ],
-        "description": "llSetScale( vector size );\n\n 47 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the size of the prim according to size\n• vector size\nThe components of size (x, y & z) each need to be in the range [0.01, 64.0][1], if they are out of the range they are rounded to the nearest endpoint.\n"
+        "description": "llSetScale( vector size );\n\n 47 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the size of the prim according to size\n• vector size\nThe components of size (x, y & z) each need to be in the range [0.01, 64.0], if they are out of the range they are rounded to the nearest endpoint.\n"
     },
     "llListSort": {
         "prefix": "llListSort",
@@ -1854,7 +2252,7 @@
         "body": [
            "llGetParcelPrimCount(${1:pos}, ${2:category}, ${3:sim_wide})$0"
         ],
-        "description": "integer llGetParcelPrimCount( vector pos, integer category, integer sim_wide );\n\n 325 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns an integer that is the total land impact of objects on the parcel at pos of the given category\n• vector pos – position in region coordinates (z component is ignored)\n• integer category – a PARCEL_COUNT_* flag\n• integer sim_wide – boolean,  TRUE[1] searches parcels in the region with the same owner as the targeted parcel, FALSE searches only the targeted parcel\n"
+        "description": "integer llGetParcelPrimCount( vector pos, integer category, integer sim_wide );\n\n 325 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns an integer that is the total land impact of objects on the parcel at pos of the given category\n• vector pos – position in region coordinates (z component is ignored)\n• integer category – a PARCEL_COUNT_* flag\n• integer sim_wide – boolean,  TRUE searches parcels in the region with the same owner as the targeted parcel, FALSE searches only the targeted parcel\n"
     },
     "llGetOwnerKey": {
         "prefix": "llGetOwnerKey",
@@ -2085,7 +2483,7 @@
         "body": [
            "llSetTextureAnim(${1:mode}, ${2:face}, ${3:sizex}, ${4:sizey}, ${5:start}, ${6:length}, ${7:rate});$0"
         ],
-        "description": "llSetTextureAnim( integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate );\n\n 211 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nAnimate the texture on the specified face/faces by setting the texture scale and offset.\n• integer mode – mask of Mode flags\n• integer face – face number or ALL_SIDES\n• integer sizex – horizontal frames (ignored for ROTATE and SCALE)\n• integer sizey – vertical frames (ignored for ROTATE and SCALE)\n• float start – Start position/frame number (or radians for ROTATE)\n• float length – number of frames to display (or radians for ROTATE)\n• float rate – frames per second (must not be zero)\nIf face is ALL_SIDES then the function works on all sides.\nstart supports negative indexes.\nFrames are numbered from left to right, top to bottom, starting at 0.If rate is negative, it has the same effect as using the REVERSE flag.[1]\n"
+        "description": "llSetTextureAnim( integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate );\n\n 211 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nAnimate the texture on the specified face/faces by setting the texture scale and offset.\n• integer mode – mask of Mode flags\n• integer face – face number or ALL_SIDES\n• integer sizex – horizontal frames (ignored for ROTATE and SCALE)\n• integer sizey – vertical frames (ignored for ROTATE and SCALE)\n• float start – Start position/frame number (or radians for ROTATE)\n• float length – number of frames to display (or radians for ROTATE)\n• float rate – frames per second (must not be zero)\nIf face is ALL_SIDES then the function works on all sides.\nstart supports negative indexes.\nFrames are numbered from left to right, top to bottom, starting at 0.If rate is negative, it has the same effect as using the REVERSE flag.\n"
     },
     "llGetHTTPHeader": {
         "prefix": "llGetHTTPHeader",
@@ -2421,7 +2819,7 @@
         "body": [
            "llMessageLinked(${1:link}, ${2:num}, ${3:str}, ${4:id});$0"
         ],
-        "description": "llMessageLinked( integer link, integer num, string str, key id );\n\n 164 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThe purpose of this function is to allow scripts in the same object to communicate. It triggers a link_message event with the same parameters num, str, and id in all scripts in the prim(s) described by link.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag, controls which prim(s) receive the link_message. \n• integer num – Value of the second parameter of the resulting link_message event.\n• string str – Value of the third parameter of the resulting link_message event.\n• key id – Value of the fourth parameter of the resulting link_message event.You can use id as a second string field[2]. The sizes of str and id are only limited by available script memory."
+        "description": "llMessageLinked( integer link, integer num, string str, key id );\n\n 164 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThe purpose of this function is to allow scripts in the same object to communicate. It triggers a link_message event with the same parameters num, str, and id in all scripts in the prim(s) described by link.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag, controls which prim(s) receive the link_message. \n• integer num – Value of the second parameter of the resulting link_message event.\n• string str – Value of the third parameter of the resulting link_message event.\n• key id – Value of the fourth parameter of the resulting link_message event.You can use id as a second string field. The sizes of str and id are only limited by available script memory."
     },
     "llAxisAngle2Rot": {
         "prefix": "llAxisAngle2Rot",
@@ -2932,14 +3330,14 @@
         "body": [
            "llAsin(${1:val})$0"
         ],
-        "description": "float llAsin( float val );\n\n 173 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the arcsine in radians of val\n• float val – must fall in the range [-1.0, 1.0]\nThe returned value is in the range [-PI_BY_TWO, PI_BY_TWO][1]\n"
+        "description": "float llAsin( float val );\n\n 173 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the arcsine in radians of val\n• float val – must fall in the range [-1.0, 1.0]\nThe returned value is in the range [-PI_BY_TWO, PI_BY_TWO]\n"
     },
     "llGetPhysicsMaterial": {
         "prefix": "llGetPhysicsMaterial",
         "body": [
            "llGetPhysicsMaterial()$0"
         ],
-        "description": "list llGetPhysicsMaterial( );\n\n ? Function ID\n  Forced Delay\n  Energy\n\nUsed to get the physical characteristics of an object.Returns a list in the form [ float gravity_multiplier, float restitution, float friction, float density ]\n• float gravity_multiplier – range [-1.0, +28.0], default: 1.0\n• float restitution – range [0.0, 1.0], default: [0.3, 0.9] [1]\n• float friction – range [0.0, 255.0], default: [0.2, 0.9][1]\n• float density – range [1.0, 22587.0] kg/m^3, default: 1000.0The default values for friction and restitution depend upon the material type."
+        "description": "list llGetPhysicsMaterial( );\n\n ? Function ID\n  Forced Delay\n  Energy\n\nUsed to get the physical characteristics of an object.Returns a list in the form [ float gravity_multiplier, float restitution, float friction, float density ]\n• float gravity_multiplier – range [-1.0, +28.0], default: 1.0\n• float restitution – range [0.0, 1.0], default: [0.3, 0.9] \n• float friction – range [0.0, 255.0], default: [0.2, 0.9]\n• float density – range [1.0, 22587.0] kg/m^3, default: 1000.0The default values for friction and restitution depend upon the material type."
     },
     "llDetectedTouchUV": {
         "prefix": "llDetectedTouchUV",
@@ -2988,7 +3386,7 @@
         "body": [
            "llCloud(${1:offset})$0"
         ],
-        "description": "float llCloud( vector offset );\n\n 43 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the cloud density at the prim position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nOnly the x and y coordinates in offset are important, the z component is ignored.\nReturned values are in the range [0.0, 2.0][1]. Values above 1.0 indicate rain.\n"
+        "description": "float llCloud( vector offset );\n\n 43 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the cloud density at the prim position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nOnly the x and y coordinates in offset are important, the z component is ignored.\nReturned values are in the range [0.0, 2.0]. Values above 1.0 indicate rain.\n"
     },
     "llCreateKeyValue": {
         "prefix": "llCreateKeyValue",
@@ -3128,7 +3526,7 @@
         "body": [
            "llDetectedTouchST(${1:index})$0"
         ],
-        "description": "vector llDetectedTouchST( integer index );\n\n 342 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the surface coordinates for where the prim was touched. The x & y vector positions contain the horizontal (s) & vertical (t) face coordinates respectively (<s, t, 0.0>). Each component is usually in the interval [0.0, 1.0] with the origin in the bottom left corner.[1] With some mesh objects, values of less than 0.0 and higher than 1.0 have been observed.\nTOUCH_INVALID_TEXCOORD is returned when the surface coordinates cannot be determined. See Caveats for further details.\n• integer index – Index of detection information\nindex does not support negative indexes.\nFor the touch category of events only. The prim that was touched may not be the prim receiving the event, use llDetectedLinkNumber to check for this; likewise you can use llDetectedTouchFace to determine which face was touched.\n"
+        "description": "vector llDetectedTouchST( integer index );\n\n 342 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the surface coordinates for where the prim was touched. The x & y vector positions contain the horizontal (s) & vertical (t) face coordinates respectively (<s, t, 0.0>). Each component is usually in the interval [0.0, 1.0] with the origin in the bottom left corner. With some mesh objects, values of less than 0.0 and higher than 1.0 have been observed.\nTOUCH_INVALID_TEXCOORD is returned when the surface coordinates cannot be determined. See Caveats for further details.\n• integer index – Index of detection information\nindex does not support negative indexes.\nFor the touch category of events only. The prim that was touched may not be the prim receiving the event, use llDetectedLinkNumber to check for this; likewise you can use llDetectedTouchFace to determine which face was touched.\n"
     },
     "llPatrolPoints": {
         "prefix": "llPatrolPoints",
@@ -3310,7 +3708,7 @@
         "body": [
            "llSetScriptState(${1:name}, ${2:running});$0"
         ],
-        "description": "llSetScriptState( string name, integer running );\n\n 148 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSet the running state of the script name.\n• string name – a script in the inventory of the prim this script is in\n• integer running – boolean, if TRUE[1] the script will be enabled, if FALSE the script will be disabled\n"
+        "description": "llSetScriptState( string name, integer running );\n\n 148 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSet the running state of the script name.\n• string name – a script in the inventory of the prim this script is in\n• integer running – boolean, if TRUE the script will be enabled, if FALSE the script will be disabled\n"
     },
     "llSetVehicleFlags": {
         "prefix": "llSetVehicleFlags",
@@ -3590,7 +3988,7 @@
         "body": [
            "llSetLinkTextureAnim(${1:link}, ${2:mode}, ${3:face}, ${4:sizex}, ${5:sizey}, ${6:start}, ${7:length}, ${8:rate});$0"
         ],
-        "description": "llSetLinkTextureAnim( integer link, integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate );\n\n 356 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nAnimate the texture on the specified face/faces of the specified prim/prims by setting the texture scale and offset. Identical to llSetTextureAnim except able to modify any prim in the link set.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag to effect\n• integer mode – bit field of Mode flags\n• integer face – face number or ALL_SIDES\n• integer sizex – horizontal frames (ignored for ROTATE and SCALE)\n• integer sizey – vertical frames (ignored for ROTATE and SCALE)\n• float start – Start position/frame number (or radians for ROTATE)\n• float length – number of frames to display (or radians for ROTATE)\n• float rate – frames per second (must not be zero)\nIf face is ALL_SIDES then the function works on all sides.\nstart supports negative indexes.\nFrames are numbered from left to right, top to bottom, starting at 0.If rate is negative, it has the same effect as using the REVERSE flag.[2]\n"
+        "description": "llSetLinkTextureAnim( integer link, integer mode, integer face, integer sizex, integer sizey, float start, float length, float rate );\n\n 356 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nAnimate the texture on the specified face/faces of the specified prim/prims by setting the texture scale and offset. Identical to llSetTextureAnim except able to modify any prim in the link set.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag to effect\n• integer mode – bit field of Mode flags\n• integer face – face number or ALL_SIDES\n• integer sizex – horizontal frames (ignored for ROTATE and SCALE)\n• integer sizey – vertical frames (ignored for ROTATE and SCALE)\n• float start – Start position/frame number (or radians for ROTATE)\n• float length – number of frames to display (or radians for ROTATE)\n• float rate – frames per second (must not be zero)\nIf face is ALL_SIDES then the function works on all sides.\nstart supports negative indexes.\nFrames are numbered from left to right, top to bottom, starting at 0.If rate is negative, it has the same effect as using the REVERSE flag.\n"
     },
 
     "ACTIVE": {
@@ -7750,5 +8148,221 @@
            "ZERO_VECTOR$0"
         ],
         "description": "ZERO_VECTOR"
+    },
+
+
+
+    "XP_ERROR_NONE": {
+        "prefix": "XP_ERROR_NONE",
+        "body": [
+           "XP_ERROR_NONE$0"
+        ],
+        "description": "No error was detected"
+    },
+    "XP_ERROR_THROTTLED": {
+        "prefix": "XP_ERROR_THROTTLED",
+        "body": [
+           "XP_ERROR_THROTTLED$0"
+        ],
+        "description": "The call failed due to too many recent calls."
+    },
+    "XP_ERROR_EXPERIENCES_DISABLED": {
+        "prefix": "XP_ERROR_EXPERIENCES_DISABLED",
+        "body": [
+           "XP_ERROR_EXPERIENCES_DISABLED$0"
+        ],
+        "description": "The region currently has experiences disabled."
+    },
+    "XP_ERROR_INVALID_PARAMETERS": {
+        "prefix": "XP_ERROR_INVALID_PARAMETERS",
+        "body": [
+           "XP_ERROR_INVALID_PARAMETERS$0"
+        ],
+        "description": "One of the string arguments was too big to fit in the key-value store."
+    },
+    "XP_ERROR_NOT_PERMITTED": {
+        "prefix": "XP_ERROR_NOT_PERMITTED",
+        "body": [
+           "XP_ERROR_NOT_PERMITTED$0"
+        ],
+        "description": "Experience permissions were denied by the user."
+    },
+    "XP_ERROR_NO_EXPERIENCE": {
+        "prefix": "XP_ERROR_NO_EXPERIENCE",
+        "body": [
+           "XP_ERROR_NO_EXPERIENCE$0"
+        ],
+        "description": "This script is not associated with an experience."
+    },
+    "XP_ERROR_NOT_FOUND": {
+        "prefix": "XP_ERROR_NOT_FOUND",
+        "body": [
+           "XP_ERROR_NOT_FOUND$0"
+        ],
+        "description": "The sim was unable to verify the validity of the experience. Retrying after a short wait is advised."
+    },
+    "XP_ERROR_INVALID_EXPERIENCE": {
+        "prefix": "XP_ERROR_INVALID_EXPERIENCE",
+        "body": [
+           "XP_ERROR_INVALID_EXPERIENCE$0"
+        ],
+        "description": "The script is associated with an experience that no longer exists."
+    },
+    "XP_ERROR_EXPERIENCE_DISABLED": {
+        "prefix": "XP_ERROR_EXPERIENCE_DISABLED",
+        "body": [
+           "XP_ERROR_EXPERIENCE_DISABLED$0"
+        ],
+        "description": "The experience owner has temporarily disabled the experience."
+    },
+    "XP_ERROR_EXPERIENCE_SUSPENDED": {
+        "prefix": "XP_ERROR_EXPERIENCE_SUSPENDED",
+        "body": [
+           "XP_ERROR_EXPERIENCE_SUSPENDED$0"
+        ],
+        "description": "The experience has been suspended by Linden Lab customer support."
+    },
+    "XP_ERROR_UNKNOWN_ERROR": {
+        "prefix": "XP_ERROR_UNKNOWN_ERROR",
+        "body": [
+           "XP_ERROR_UNKNOWN_ERROR$0"
+        ],
+        "description": "An unknown error not covered by any of the other predetermined error states."
+    },
+    "XP_ERROR_QUOTA_EXCEEDED": {
+        "prefix": "XP_ERROR_QUOTA_EXCEEDED",
+        "body": [
+           "XP_ERROR_QUOTA_EXCEEDED$0"
+        ],
+        "description": "An attempt to write data to the key-value store failed due to the data quota being met."
+    },
+    "XP_ERROR_STORE_DISABLED": {
+        "prefix": "XP_ERROR_STORE_DISABLED",
+        "body": [
+           "XP_ERROR_STORE_DISABLED$0"
+        ],
+        "description": "They key-value store is currently disabled on this region."
+    },
+    "XP_ERROR_STORAGE_EXCEPTION": {
+        "prefix": "XP_ERROR_STORAGE_EXCEPTION",
+        "body": [
+           "XP_ERROR_STORAGE_EXCEPTION$0"
+        ],
+        "description": "Unable to communicate with the key-value store."
+    },
+    "XP_ERROR_KEY_NOT_FOUND": {
+        "prefix": "XP_ERROR_KEY_NOT_FOUND",
+        "body": [
+           "XP_ERROR_KEY_NOT_FOUND$0"
+        ],
+        "description": "They requested key does not exist."
+    },
+    "XP_ERROR_RETRY_UPDATE": {
+        "prefix": "XP_ERROR_RETRY_UPDATE",
+        "body": [
+           "XP_ERROR_RETRY_UPDATE$0"
+        ],
+        "description": "A checked update failed due to an out of date request."
+    },
+    "XP_ERROR_MATURITY_EXCEEDED": {
+        "prefix": "XP_ERROR_MATURITY_EXCEEDED",
+        "body": [
+           "XP_ERROR_MATURITY_EXCEEDED$0"
+        ],
+        "description": "The content rating of the experience exceeds that of the region."
+    },
+    "XP_ERROR_NOT_PERMITTED_LAND": {
+        "prefix": "XP_ERROR_NOT_PERMITTED_LAND",
+        "body": [
+           "XP_ERROR_NOT_PERMITTED_LAND$0"
+        ],
+        "description": "The experience is blocked or not enabled for this land."
+    },
+    "XP_ERROR_REQUEST_PERM_TIMEOUT": {
+        "prefix": "XP_ERROR_REQUEST_PERM_TIMEOUT",
+        "body": [
+           "XP_ERROR_REQUEST_PERM_TIMEOUT$0"
+        ],
+        "description": "The request for experience permissions was ignored."
+    },
+
+
+
+    "LINDENDOLLAR_INSUFFICIENTFUNDS": {
+        "prefix": "LINDENDOLLAR_INSUFFICIENTFUNDS",
+        "body": [
+           "LINDENDOLLAR_INSUFFICIENTFUNDS$0"
+        ],
+        "description": "The source agent does not have enough L$ for the transfer"
+    },
+    "LINDENDOLLAR_ENTITYDOESNOTEXIST": {
+        "prefix": "LINDENDOLLAR_ENTITYDOESNOTEXIST",
+        "body": [
+           "LINDENDOLLAR_ENTITYDOESNOTEXIST$0"
+        ],
+        "description": "The destination UUID is not a valid agent."
+    },
+    "LINDENDOLLAR_BADCLOCKSKEW": {
+        "prefix": "LINDENDOLLAR_BADCLOCKSKEW",
+        "body": [
+           "LINDENDOLLAR_BADCLOCKSKEW$0"
+        ],
+        "description": "There is bad clock skew between the sim host and the L$ service"
+    },
+    "INVALID_DESTINATION": {
+        "prefix": "INVALID_DESTINATION",
+        "body": [
+           "INVALID_DESTINATION$0"
+        ],
+        "description": "Destination agent is not a valid UUID"
+    },
+    "INVALID_AMOUNT": {
+        "prefix": "INVALID_AMOUNT",
+        "body": [
+           "INVALID_AMOUNT$0"
+        ],
+        "description": "Amount is <= 0"
+    },
+    "THROTTLED": {
+        "prefix": "THROTTLED",
+        "body": [
+           "THROTTLED$0"
+        ],
+        "description": "The scripted L$ throttle was hit for this object owner."
+    },
+    "MISSING_PERMISSION_DEBIT": {
+        "prefix": "MISSING_PERMISSION_DEBIT",
+        "body": [
+           "MISSING_PERMISSION_DEBIT$0"
+        ],
+        "description": "The script does not have debit permission"
+    },
+    "GROUP_OWNED": {
+        "prefix": "GROUP_OWNED",
+        "body": [
+           "GROUP_OWNED$0"
+        ],
+        "description": "The object is group owned and thus can't give money"
+    },
+    "TRANSFERS_DISABLED": {
+        "prefix": "TRANSFERS_DISABLED",
+        "body": [
+           "TRANSFERS_DISABLED$0"
+        ],
+        "description": "L$ transfers are disabled in the region"
+    },
+    "EXPIRED": {
+        "prefix": "EXPIRED",
+        "body": [
+           "EXPIRED$0"
+        ],
+        "description": "The simulator timed out waiting for a response from the back-end service."
+    },
+    "SERVICE_ERROR": {
+        "prefix": "SERVICE_ERROR",
+        "body": [
+           "SERVICE_ERROR$0"
+        ],
+        "description": "There was an error connecting to the back-end service"
     }
 }

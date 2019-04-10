@@ -28,6 +28,11 @@ Image Sample:
 
 ## Release Notes
 
+### 1.1.0 (2019-04-10)
+- Added Code Snippents for LSL Event
+- Added Code Snippents for XP Constants
+- Added Code Snippents for llTransfer* Function Error Tag Constants
+
 ### 1.0.0 (2019-04-10)
 
 - Initial release
