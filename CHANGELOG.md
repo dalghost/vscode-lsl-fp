@@ -7,6 +7,12 @@ All notable changes to the "lsl" extension will be documented in this file.
 - Added Code Snippets for LSL All Constants Description.
 
 
+## [1.1.1] - 2019-04-10
+### Added
+- Added Syntax Highlight for 'state' keyword
+
+### Changed
+- Remove Syntax Highlight for junk keywords
 
 ## [1.1.0] - 2019-04-10
 ### Added

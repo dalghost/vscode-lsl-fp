@@ -28,6 +28,11 @@ Image Sample:
 
 ## Release Notes
 
+
+### 1.1.1 (2019-04-10)
+- Added Syntax Highlight for 'state' keyword
+- Remove Syntax Highlight for junk keywords
+
 ### 1.1.0 (2019-04-10)
 - Added Code Snippents for LSL Event
 - Added Code Snippents for XP Constants
