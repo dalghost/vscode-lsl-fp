@@ -1,0 +1,53 @@
+{
+	"name": "lsl-fp",
+	"displayName": "LSL-FP",
+	"description": "Support for Linden Scripting Language(LSL) with Firestorm Preprocessor and Code Snippeis",
+	"version": "1.0.1",
+	"publisher": "DalGhost",
+	"homepage": "https://github.com/dalghost/vscode-lsl-fp",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/dalghost/vscode-lsl-fp.git"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"icon": "icon.png",
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"contributes": {
+		"languages": [
+			{
+				"id": "lsl",
+				"aliases": [
+					"LSL",
+					"lsl"
+				],
+				"extensions": [
+					".lsl"
+				],
+				"configuration": "./language-configuration.json"
+			}
+		],
+		"grammars": [
+			{
+				"language": "lsl",
+				"scopeName": "source.lsl",
+				"path": "./syntaxes/lsl.tmLanguage.json"
+			}
+		],
+		"snippets": [
+			{
+				"language": "lsl",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "d85d6816-c742-4032-b25a-5a88b57bde8c",
+		"publisherDisplayName": "Dal Ghost",
+		"publisherId": "ae23ab04-81a7-43d0-9133-43d399c0432b"
+	}
+}
