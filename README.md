@@ -29,6 +29,9 @@ Image Sample:
 ## Release Notes
 
 
+### 1.1.2 (2019-04-19)
+- Fixed listen parameter in Code Snippets
+
 ### 1.1.1 (2019-04-10)
 - Added Syntax Highlight for 'state' keyword
 - Remove Syntax Highlight for junk keywords

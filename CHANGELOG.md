@@ -7,6 +7,10 @@ All notable changes to the "lsl" extension will be documented in this file.
 - Added Code Snippets for LSL All Constants Description.
 
 
+## [1.1.2] - 2019-04-19
+### Fixed
+- Fixed listen parameter in Code Snippets
+
 ## [1.1.1] - 2019-04-10
 ### Added
 - Added Syntax Highlight for 'state' keyword
@@ -16,9 +20,9 @@ All notable changes to the "lsl" extension will be documented in this file.
 
 ## [1.1.0] - 2019-04-10
 ### Added
-- Added Code Snippents for LSL Event
-- Added Code Snippents for XP Constants
-- Added Code Snippents for llTransfer* Function Error Tag Constants
+- Added Code Snippets for LSL Event
+- Added Code Snippets for XP Constants
+- Added Code Snippets for llTransfer* Function Error Tag Constants
 
 
 ## [1.0.0] - 2019-04-10

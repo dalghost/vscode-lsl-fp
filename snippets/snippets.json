@@ -631,7 +631,7 @@
     "listen Event": {
         "prefix": "listen",
         "body": [
-            "listen( integer ${1:channel}, string ${2:name}, string ${3:message} )",
+            "listen( integer ${1:channel}, string ${2:name}, key ${3:id}, string ${4:message} )",
             "{",
             "\t$0",
             "}"
