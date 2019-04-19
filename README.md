@@ -29,6 +29,9 @@ Image Sample:
 ## Release Notes
 
 
+### 1.1.3 (2019-04-19)
+- Added Code Snippents for Missing Constants
+
 ### 1.1.2 (2019-04-19)
 - Fixed listen parameter in Code Snippets
 

@@ -4080,21 +4080,21 @@
         "body": [
            "AGENT_LIST_PARCEL$0"
         ],
-        "description": "AGENT_LIST_PARCEL"
+        "description": "returns only agents on the same parcel where the script is running."
     },
     "AGENT_LIST_PARCEL_OWNER": {
         "prefix": "AGENT_LIST_PARCEL_OWNER",
         "body": [
            "AGENT_LIST_PARCEL_OWNER$0"
         ],
-        "description": "AGENT_LIST_PARCEL_OWNER"
+        "description": "returns only agents on any parcel in the region where the parcel owner is the same as the owner of the parcel under the scripted object."
     },
     "AGENT_LIST_REGION": {
         "prefix": "AGENT_LIST_REGION",
         "body": [
            "AGENT_LIST_REGION$0"
         ],
-        "description": "AGENT_LIST_REGION"
+        "description": "returns any/all agents in the region."
     },
     "AGENT_MOUSELOOK": {
         "prefix": "AGENT_MOUSELOOK",
@@ -4157,385 +4157,385 @@
         "body": [
            "ATTACH_AVATAR_CENTER$0"
         ],
-        "description": "ATTACH_AVATAR_CENTER"
+        "description": "Avatar Center: avatar center/root"
     },
     "ATTACH_BACK": {
         "prefix": "ATTACH_BACK",
         "body": [
            "ATTACH_BACK$0"
         ],
-        "description": "ATTACH_BACK"
+        "description": "Spine: back"
     },
     "ATTACH_BELLY": {
         "prefix": "ATTACH_BELLY",
         "body": [
            "ATTACH_BELLY$0"
         ],
-        "description": "ATTACH_BELLY"
+        "description": "Stomach: belly/stomach/tummy"
     },
     "ATTACH_CHEST": {
         "prefix": "ATTACH_CHEST",
         "body": [
            "ATTACH_CHEST$0"
         ],
-        "description": "ATTACH_CHEST"
+        "description": "Chest: chest/sternum"
     },
     "ATTACH_CHIN": {
         "prefix": "ATTACH_CHIN",
         "body": [
            "ATTACH_CHIN$0"
         ],
-        "description": "ATTACH_CHIN"
+        "description": "Chin: chin"
     },
     "ATTACH_FACE_JAW": {
         "prefix": "ATTACH_FACE_JAW",
         "body": [
            "ATTACH_FACE_JAW$0"
         ],
-        "description": "ATTACH_FACE_JAW"
+        "description": "Jaw: jaw"
     },
     "ATTACH_FACE_LEAR": {
         "prefix": "ATTACH_FACE_LEAR",
         "body": [
            "ATTACH_FACE_LEAR$0"
         ],
-        "description": "ATTACH_FACE_LEAR"
+        "description": "Alt Left Ear: left ear (extended)"
     },
     "ATTACH_FACE_LEYE": {
         "prefix": "ATTACH_FACE_LEYE",
         "body": [
            "ATTACH_FACE_LEYE$0"
         ],
-        "description": "ATTACH_FACE_LEYE"
+        "description": "Alt Left Eye: left eye (extended)"
     },
     "ATTACH_FACE_REAR": {
         "prefix": "ATTACH_FACE_REAR",
         "body": [
            "ATTACH_FACE_REAR$0"
         ],
-        "description": "ATTACH_FACE_REAR"
+        "description": "Alt Right Ear: right ear (extended)"
     },
     "ATTACH_FACE_REYE": {
         "prefix": "ATTACH_FACE_REYE",
         "body": [
            "ATTACH_FACE_REYE$0"
         ],
-        "description": "ATTACH_FACE_REYE"
+        "description": "Alt Right Eye: right eye (extended)"
     },
     "ATTACH_FACE_TONGUE": {
         "prefix": "ATTACH_FACE_TONGUE",
         "body": [
            "ATTACH_FACE_TONGUE$0"
         ],
-        "description": "ATTACH_FACE_TONGUE"
+        "description": "Tongue: tongue"
     },
     "ATTACH_GROIN": {
         "prefix": "ATTACH_GROIN",
         "body": [
            "ATTACH_GROIN$0"
         ],
-        "description": "ATTACH_GROIN"
+        "description": "Groin: groin"
     },
     "ATTACH_HEAD": {
         "prefix": "ATTACH_HEAD",
         "body": [
            "ATTACH_HEAD$0"
         ],
-        "description": "ATTACH_HEAD"
+        "description": "Skull: head"
     },
     "ATTACH_HIND_LFOOT": {
         "prefix": "ATTACH_HIND_LFOOT",
         "body": [
            "ATTACH_HIND_LFOOT$0"
         ],
-        "description": "ATTACH_HIND_LFOOT"
+        "description": "Left Hind Foot: left hind foot"
     },
     "ATTACH_HIND_RFOOT": {
         "prefix": "ATTACH_HIND_RFOOT",
         "body": [
            "ATTACH_HIND_RFOOT$0"
         ],
-        "description": "ATTACH_HIND_RFOOT"
+        "description": "Right Hind Foot: right hind foot"
     },
     "ATTACH_HUD_BOTTOM": {
         "prefix": "ATTACH_HUD_BOTTOM",
         "body": [
            "ATTACH_HUD_BOTTOM$0"
         ],
-        "description": "ATTACH_HUD_BOTTOM"
+        "description": "HUD Bottom"
     },
     "ATTACH_HUD_BOTTOM_LEFT": {
         "prefix": "ATTACH_HUD_BOTTOM_LEFT",
         "body": [
            "ATTACH_HUD_BOTTOM_LEFT$0"
         ],
-        "description": "ATTACH_HUD_BOTTOM_LEFT"
+        "description": "HUD Bottom Left"
     },
     "ATTACH_HUD_BOTTOM_RIGHT": {
         "prefix": "ATTACH_HUD_BOTTOM_RIGHT",
         "body": [
            "ATTACH_HUD_BOTTOM_RIGHT$0"
         ],
-        "description": "ATTACH_HUD_BOTTOM_RIGHT"
+        "description": "HUD Bottom Right"
     },
     "ATTACH_HUD_CENTER_1": {
         "prefix": "ATTACH_HUD_CENTER_1",
         "body": [
            "ATTACH_HUD_CENTER_1$0"
         ],
-        "description": "ATTACH_HUD_CENTER_1"
+        "description": "HUD Center"
     },
     "ATTACH_HUD_CENTER_2": {
         "prefix": "ATTACH_HUD_CENTER_2",
         "body": [
            "ATTACH_HUD_CENTER_2$0"
         ],
-        "description": "ATTACH_HUD_CENTER_2"
+        "description": "HUD Center 2"
     },
     "ATTACH_HUD_TOP_CENTER": {
         "prefix": "ATTACH_HUD_TOP_CENTER",
         "body": [
            "ATTACH_HUD_TOP_CENTER$0"
         ],
-        "description": "ATTACH_HUD_TOP_CENTER"
+        "description": "HUD Top"
     },
     "ATTACH_HUD_TOP_LEFT": {
         "prefix": "ATTACH_HUD_TOP_LEFT",
         "body": [
            "ATTACH_HUD_TOP_LEFT$0"
         ],
-        "description": "ATTACH_HUD_TOP_LEFT"
+        "description": "HUD Top Left"
     },
     "ATTACH_HUD_TOP_RIGHT": {
         "prefix": "ATTACH_HUD_TOP_RIGHT",
         "body": [
            "ATTACH_HUD_TOP_RIGHT$0"
         ],
-        "description": "ATTACH_HUD_TOP_RIGHT"
+        "description": "HUD Top Right"
     },
     "ATTACH_LEAR": {
         "prefix": "ATTACH_LEAR",
         "body": [
            "ATTACH_LEAR$0"
         ],
-        "description": "ATTACH_LEAR"
+        "description": "Left Ear: left ear"
     },
     "ATTACH_LEFT_PEC": {
         "prefix": "ATTACH_LEFT_PEC",
         "body": [
            "ATTACH_LEFT_PEC$0"
         ],
-        "description": "ATTACH_LEFT_PEC"
+        "description": "Left Pec: left pectoral"
     },
     "ATTACH_LEYE": {
         "prefix": "ATTACH_LEYE",
         "body": [
            "ATTACH_LEYE$0"
         ],
-        "description": "ATTACH_LEYE"
+        "description": "Left Eye: left eye"
     },
     "ATTACH_LFOOT": {
         "prefix": "ATTACH_LFOOT",
         "body": [
            "ATTACH_LFOOT$0"
         ],
-        "description": "ATTACH_LFOOT"
+        "description": "Left Foot: left foot"
     },
     "ATTACH_LHAND": {
         "prefix": "ATTACH_LHAND",
         "body": [
            "ATTACH_LHAND$0"
         ],
-        "description": "ATTACH_LHAND"
+        "description": "Left Hand: left hand"
     },
     "ATTACH_LHAND_RING1": {
         "prefix": "ATTACH_LHAND_RING1",
         "body": [
            "ATTACH_LHAND_RING1$0"
         ],
-        "description": "ATTACH_LHAND_RING1"
+        "description": "Left Ring Finger: left ring finger"
     },
     "ATTACH_LHIP": {
         "prefix": "ATTACH_LHIP",
         "body": [
            "ATTACH_LHIP$0"
         ],
-        "description": "ATTACH_LHIP"
+        "description": "Left Hip: left hip"
     },
     "ATTACH_LLARM": {
         "prefix": "ATTACH_LLARM",
         "body": [
            "ATTACH_LLARM$0"
         ],
-        "description": "ATTACH_LLARM"
+        "description": "L Lower Arm: left lower arm"
     },
     "ATTACH_LLLEG": {
         "prefix": "ATTACH_LLLEG",
         "body": [
            "ATTACH_LLLEG$0"
         ],
-        "description": "ATTACH_LLLEG"
+        "description": "L Lower Leg: left lower leg"
     },
     "ATTACH_LSHOULDER": {
         "prefix": "ATTACH_LSHOULDER",
         "body": [
            "ATTACH_LSHOULDER$0"
         ],
-        "description": "ATTACH_LSHOULDER"
+        "description": "Left Shoulder: left shoulder"
     },
     "ATTACH_LUARM": {
         "prefix": "ATTACH_LUARM",
         "body": [
            "ATTACH_LUARM$0"
         ],
-        "description": "ATTACH_LUARM"
+        "description": "L Upper Arm: left upper arm"
     },
     "ATTACH_LULEG": {
         "prefix": "ATTACH_LULEG",
         "body": [
            "ATTACH_LULEG$0"
         ],
-        "description": "ATTACH_LULEG"
+        "description": "L Upper Leg: left upper leg"
     },
     "ATTACH_LWING": {
         "prefix": "ATTACH_LWING",
         "body": [
            "ATTACH_LWING$0"
         ],
-        "description": "ATTACH_LWING"
+        "description": "Left Wing: left wing"
     },
     "ATTACH_MOUTH": {
         "prefix": "ATTACH_MOUTH",
         "body": [
            "ATTACH_MOUTH$0"
         ],
-        "description": "ATTACH_MOUTH"
+        "description": "Mouth: mouth"
     },
     "ATTACH_NECK": {
         "prefix": "ATTACH_NECK",
         "body": [
            "ATTACH_NECK$0"
         ],
-        "description": "ATTACH_NECK"
+        "description": "Neck: neck"
     },
     "ATTACH_NOSE": {
         "prefix": "ATTACH_NOSE",
         "body": [
            "ATTACH_NOSE$0"
         ],
-        "description": "ATTACH_NOSE"
+        "description": "Nose: nose"
     },
     "ATTACH_PELVIS": {
         "prefix": "ATTACH_PELVIS",
         "body": [
            "ATTACH_PELVIS$0"
         ],
-        "description": "ATTACH_PELVIS"
+        "description": "Pelvis: pelvis"
     },
     "ATTACH_REAR": {
         "prefix": "ATTACH_REAR",
         "body": [
            "ATTACH_REAR$0"
         ],
-        "description": "ATTACH_REAR"
+        "description": "Right Ear: right ear"
     },
     "ATTACH_REYE": {
         "prefix": "ATTACH_REYE",
         "body": [
            "ATTACH_REYE$0"
         ],
-        "description": "ATTACH_REYE"
+        "description": "Right Eye: right eye"
     },
     "ATTACH_RFOOT": {
         "prefix": "ATTACH_RFOOT",
         "body": [
            "ATTACH_RFOOT$0"
         ],
-        "description": "ATTACH_RFOOT"
+        "description": "Right Foot: right foot"
     },
     "ATTACH_RHAND": {
         "prefix": "ATTACH_RHAND",
         "body": [
            "ATTACH_RHAND$0"
         ],
-        "description": "ATTACH_RHAND"
+        "description": "Right Hand: right hand"
     },
     "ATTACH_RHAND_RING1": {
         "prefix": "ATTACH_RHAND_RING1",
         "body": [
            "ATTACH_RHAND_RING1$0"
         ],
-        "description": "ATTACH_RHAND_RING1"
+        "description": "Right Ring Finger: right ring finger"
     },
     "ATTACH_RHIP": {
         "prefix": "ATTACH_RHIP",
         "body": [
            "ATTACH_RHIP$0"
         ],
-        "description": "ATTACH_RHIP"
+        "description": "Right Hip: right hip"
     },
     "ATTACH_RIGHT_PEC": {
         "prefix": "ATTACH_RIGHT_PEC",
         "body": [
            "ATTACH_RIGHT_PEC$0"
         ],
-        "description": "ATTACH_RIGHT_PEC"
+        "description": "Right Pec: right pectoral"
     },
     "ATTACH_RLARM": {
         "prefix": "ATTACH_RLARM",
         "body": [
            "ATTACH_RLARM$0"
         ],
-        "description": "ATTACH_RLARM"
+        "description": "R Lower Arm: right lower arm"
     },
     "ATTACH_RLLEG": {
         "prefix": "ATTACH_RLLEG",
         "body": [
            "ATTACH_RLLEG$0"
         ],
-        "description": "ATTACH_RLLEG"
+        "description": "R Lower Leg: right lower leg"
     },
     "ATTACH_RSHOULDER": {
         "prefix": "ATTACH_RSHOULDER",
         "body": [
            "ATTACH_RSHOULDER$0"
         ],
-        "description": "ATTACH_RSHOULDER"
+        "description": "Right Shoulder: right shoulder"
     },
     "ATTACH_RUARM": {
         "prefix": "ATTACH_RUARM",
         "body": [
            "ATTACH_RUARM$0"
         ],
-        "description": "ATTACH_RUARM"
+        "description": "R Upper Arm: right upper arm"
     },
     "ATTACH_RULEG": {
         "prefix": "ATTACH_RULEG",
         "body": [
            "ATTACH_RULEG$0"
         ],
-        "description": "ATTACH_RULEG"
+        "description": "R Upper Leg: right upper leg"
     },
     "ATTACH_RWING": {
         "prefix": "ATTACH_RWING",
         "body": [
            "ATTACH_RWING$0"
         ],
-        "description": "ATTACH_RWING"
+        "description": "Right Wing: right wing"
     },
     "ATTACH_TAIL_BASE": {
         "prefix": "ATTACH_TAIL_BASE",
         "body": [
            "ATTACH_TAIL_BASE$0"
         ],
-        "description": "ATTACH_TAIL_BASE"
+        "description": "Tail Base: tail base"
     },
     "ATTACH_TAIL_TIP": {
         "prefix": "ATTACH_TAIL_TIP",
         "body": [
            "ATTACH_TAIL_TIP$0"
         ],
-        "description": "ATTACH_TAIL_TIP"
+        "description": "Tail Tip: tail tip"
     },
     "CAMERA_ACTIVE": {
         "prefix": "CAMERA_ACTIVE",
@@ -4724,91 +4724,91 @@
         "body": [
            "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES$0"
         ],
-        "description": "CHARACTER_ACCOUNT_FOR_SKIPPED_FRAMES"
+        "description": "TRUE matches pre-existing behavior. If set to FALSE, character will not attempt to catch up on lost time when pathfinding performance is low, potentially providing more reliable movement (albeit while potentially appearing to be more stuttery).\n- Default: TRUE\n- Range / Values: TRUE or FALSE"
     },
     "CHARACTER_AVOIDANCE_MODE": {
         "prefix": "CHARACTER_AVOIDANCE_MODE",
         "body": [
            "CHARACTER_AVOIDANCE_MODE$0"
         ],
-        "description": "CHARACTER_AVOIDANCE_MODE"
+        "description": "Allows you to specify that a character should not try to avoid other characters, should not try to avoid dynamic obstacles (relatively fast moving objects and avatars), or both. This is framed in the positive sense ([CHARACTER_AVOIDANCE_MODE, AVOID_CHARACTERS] would create a character that avoided other characters but not agents or moving vehicles). Setting this parameter to AVOID_NONE causes the character to not avoid either category.\n- Default: AVOID_CHARACTERS | AVOID_DYNAMIC_OBSTACLES\n- Range / Values: Combinable Flags: AVOID_CHARACTERS, AVOID_DYNAMIC_OBSTACLES, AVOID_NONE"
     },
     "CHARACTER_DESIRED_SPEED": {
         "prefix": "CHARACTER_DESIRED_SPEED",
         "body": [
            "CHARACTER_DESIRED_SPEED$0"
         ],
-        "description": "CHARACTER_DESIRED_SPEED"
+        "description": "Speed of pursuit in meters per second.\n- Default: 6\n- Range / Values: [0.2, 40.0]"
     },
     "CHARACTER_DESIRED_TURN_SPEED": {
         "prefix": "CHARACTER_DESIRED_TURN_SPEED",
         "body": [
            "CHARACTER_DESIRED_TURN_SPEED$0"
         ],
-        "description": "CHARACTER_DESIRED_TURN_SPEED"
+        "description": "The character's maximum speed while turning--note that this is only loosely enforced (i.e., a character may turn at higher speeds under certain conditions)\n- Default: 6\n- Range / Values: [0.02, 40.0]"
     },
     "CHARACTER_LENGTH": {
         "prefix": "CHARACTER_LENGTH",
         "body": [
            "CHARACTER_LENGTH$0"
         ],
-        "description": "CHARACTER_LENGTH"
+        "description": "Set collision capsule length\nIf the value is less than twice the radius plus 0.1m, it will be set to twice the radius plus 0.1m\n- Default: \n- Range / Values: (0.0, 10.0]"
     },
     "CHARACTER_MAX_ACCEL": {
         "prefix": "CHARACTER_MAX_ACCEL",
         "body": [
            "CHARACTER_MAX_ACCEL$0"
         ],
-        "description": "CHARACTER_MAX_ACCEL"
+        "description": "The character's maximum acceleration rate.\n- Default: 20\n- Range / Values: [0.5, 40.0]"
     },
     "CHARACTER_MAX_DECEL": {
         "prefix": "CHARACTER_MAX_DECEL",
         "body": [
            "CHARACTER_MAX_DECEL$0"
         ],
-        "description": "CHARACTER_MAX_DECEL"
+        "description": "The character's maximum deceleration rate.\n- Default: 30\n- Range / Values: [0.5, 60.0]"
     },
     "CHARACTER_MAX_SPEED": {
         "prefix": "CHARACTER_MAX_SPEED",
         "body": [
            "CHARACTER_MAX_SPEED$0"
         ],
-        "description": "CHARACTER_MAX_SPEED"
+        "description": "The character's maximum speed. Affects speed when avoiding dynamic obstacles and when traversing low-walkability objects in TRAVERSAL_TYPE_FAST mode.\n- Default: 20\n- Range / Values: [1, 40.0]"
     },
     "CHARACTER_MAX_TURN_RADIUS": {
         "prefix": "CHARACTER_MAX_TURN_RADIUS",
         "body": [
            "CHARACTER_MAX_TURN_RADIUS$0"
         ],
-        "description": "CHARACTER_MAX_TURN_RADIUS"
+        "description": "The character's turn radius when traveling at CHARACTER_DESIRED_TURN_SPEED\n- Default: 1.25\n- Range / Values: [0.1, 10.0]"
     },
     "CHARACTER_ORIENTATION": {
         "prefix": "CHARACTER_ORIENTATION",
         "body": [
            "CHARACTER_ORIENTATION$0"
         ],
-        "description": "CHARACTER_ORIENTATION"
+        "description": "Set the character orientation.\n- Default: VERTICAL\n- Range / Values: VERTICAL, HORIZONTAL"
     },
     "CHARACTER_RADIUS": {
         "prefix": "CHARACTER_RADIUS",
         "body": [
            "CHARACTER_RADIUS$0"
         ],
-        "description": "CHARACTER_RADIUS"
+        "description": "Set collision capsule radius.\n- Default: \n- Range / Values: [0.125, 5.0]"
     },
     "CHARACTER_STAY_WITHIN_PARCEL": {
         "prefix": "CHARACTER_STAY_WITHIN_PARCEL",
         "body": [
            "CHARACTER_STAY_WITHIN_PARCEL$0"
         ],
-        "description": "CHARACTER_STAY_WITHIN_PARCEL"
+        "description": "FALSE matches traditional behavior. If set to TRUE, treat the parcel boundaries as one-way obstacles (will re-enter but can't leave on it's own).\n- Default: Depends*\n- Range / Values: TRUE or FALSE"
     },
     "CHARACTER_TYPE": {
         "prefix": "CHARACTER_TYPE",
         "body": [
            "CHARACTER_TYPE$0"
         ],
-        "description": "CHARACTER_TYPE"
+        "description": "Specifies which walkability coefficient will be used by this character.\n- Default: CHARACTER_TYPE_NONE\n- Range / Values: CHARACTER_TYPE_A, CHARACTER_TYPE_B, CHARACTER_TYPE_C, CHARACTER_TYPE_D, CHARACTER_TYPE_NONE"
     },
     "CHARACTER_TYPE_A": {
         "prefix": "CHARACTER_TYPE_A",
@@ -4913,133 +4913,133 @@
         "body": [
            "CONTENT_TYPE_ATOM$0"
         ],
-        "description": "CONTENT_TYPE_ATOM"
+        "description": "application/atom+xml"
     },
     "CONTENT_TYPE_FORM": {
         "prefix": "CONTENT_TYPE_FORM",
         "body": [
            "CONTENT_TYPE_FORM$0"
         ],
-        "description": "CONTENT_TYPE_FORM"
+        "description": "application/x-www-form-urlencoded"
     },
     "CONTENT_TYPE_HTML": {
         "prefix": "CONTENT_TYPE_HTML",
         "body": [
            "CONTENT_TYPE_HTML$0"
         ],
-        "description": "CONTENT_TYPE_HTML"
+        "description": "text/html"
     },
     "CONTENT_TYPE_JSON": {
         "prefix": "CONTENT_TYPE_JSON",
         "body": [
            "CONTENT_TYPE_JSON$0"
         ],
-        "description": "CONTENT_TYPE_JSON"
+        "description": "application/json"
     },
     "CONTENT_TYPE_LLSD": {
         "prefix": "CONTENT_TYPE_LLSD",
         "body": [
            "CONTENT_TYPE_LLSD$0"
         ],
-        "description": "CONTENT_TYPE_LLSD"
+        "description": "application/llsd+xml"
     },
     "CONTENT_TYPE_RSS": {
         "prefix": "CONTENT_TYPE_RSS",
         "body": [
            "CONTENT_TYPE_RSS$0"
         ],
-        "description": "CONTENT_TYPE_RSS"
+        "description": "application/rss+xml"
     },
     "CONTENT_TYPE_TEXT": {
         "prefix": "CONTENT_TYPE_TEXT",
         "body": [
            "CONTENT_TYPE_TEXT$0"
         ],
-        "description": "CONTENT_TYPE_TEXT"
+        "description": "text/plain"
     },
     "CONTENT_TYPE_XHTML": {
         "prefix": "CONTENT_TYPE_XHTML",
         "body": [
            "CONTENT_TYPE_XHTML$0"
         ],
-        "description": "CONTENT_TYPE_XHTML"
+        "description": "application/xhtml+xml"
     },
     "CONTENT_TYPE_XML": {
         "prefix": "CONTENT_TYPE_XML",
         "body": [
            "CONTENT_TYPE_XML$0"
         ],
-        "description": "CONTENT_TYPE_XML"
+        "description": "application/xml"
     },
     "CONTROL_BACK": {
         "prefix": "CONTROL_BACK",
         "body": [
            "CONTROL_BACK$0"
         ],
-        "description": "CONTROL_BACK"
+        "description": "Move back control (↓ or S)"
     },
     "CONTROL_DOWN": {
         "prefix": "CONTROL_DOWN",
         "body": [
            "CONTROL_DOWN$0"
         ],
-        "description": "CONTROL_DOWN"
+        "description": "Move down control (PgDn or C)"
     },
     "CONTROL_FWD": {
         "prefix": "CONTROL_FWD",
         "body": [
            "CONTROL_FWD$0"
         ],
-        "description": "CONTROL_FWD"
+        "description": "Move forward control (↑ or W)"
     },
     "CONTROL_LBUTTON": {
         "prefix": "CONTROL_LBUTTON",
         "body": [
            "CONTROL_LBUTTON$0"
         ],
-        "description": "CONTROL_LBUTTON"
+        "description": "Left mouse button control"
     },
     "CONTROL_LEFT": {
         "prefix": "CONTROL_LEFT",
         "body": [
            "CONTROL_LEFT$0"
         ],
-        "description": "CONTROL_LEFT"
+        "description": "Move left control (⇧ Shift-← or ⇧ Shift-A [← or A in mouselook])"
     },
     "CONTROL_ML_LBUTTON": {
         "prefix": "CONTROL_ML_LBUTTON",
         "body": [
            "CONTROL_ML_LBUTTON$0"
         ],
-        "description": "CONTROL_ML_LBUTTON"
+        "description": "Left mouse button control while in mouselook"
     },
     "CONTROL_RIGHT": {
         "prefix": "CONTROL_RIGHT",
         "body": [
            "CONTROL_RIGHT$0"
         ],
-        "description": "CONTROL_RIGHT"
+        "description": "Move right control (⇧ Shift-→ or ⇧ Shift-D [→ or D in mouselook])"
     },
     "CONTROL_ROT_LEFT": {
         "prefix": "CONTROL_ROT_LEFT",
         "body": [
            "CONTROL_ROT_LEFT$0"
         ],
-        "description": "CONTROL_ROT_LEFT"
+        "description": "Rotate left control (← or A)"
     },
     "CONTROL_ROT_RIGHT": {
         "prefix": "CONTROL_ROT_RIGHT",
         "body": [
            "CONTROL_ROT_RIGHT$0"
         ],
-        "description": "CONTROL_ROT_RIGHT"
+        "description": "Rotate right control (→ or D)"
     },
     "CONTROL_UP": {
         "prefix": "CONTROL_UP",
         "body": [
            "CONTROL_UP$0"
         ],
-        "description": "CONTROL_UP"
+        "description": "Move up control (PgUp or E)"
     },
     "DATA_BORN": {
         "prefix": "DATA_BORN",
@@ -5123,77 +5123,77 @@
         "body": [
            "ERR_GENERIC$0"
         ],
-        "description": "ERR_GENERIC"
+        "description": "A nebulous and inexplicable error, nothing is known about it."
     },
     "ERR_MALFORMED_PARAMS": {
         "prefix": "ERR_MALFORMED_PARAMS",
         "body": [
            "ERR_MALFORMED_PARAMS$0"
         ],
-        "description": "ERR_MALFORMED_PARAMS"
+        "description": "Parameters are malformed."
     },
     "ERR_PARCEL_PERMISSIONS": {
         "prefix": "ERR_PARCEL_PERMISSIONS",
         "body": [
            "ERR_PARCEL_PERMISSIONS$0"
         ],
-        "description": "ERR_PARCEL_PERMISSIONS"
+        "description": "Permission lacked to perform task on specified parcel."
     },
     "ERR_RUNTIME_PERMISSIONS": {
         "prefix": "ERR_RUNTIME_PERMISSIONS",
         "body": [
            "ERR_RUNTIME_PERMISSIONS$0"
         ],
-        "description": "ERR_RUNTIME_PERMISSIONS"
+        "description": "Script lacks the runtime permission to perform the requested task."
     },
     "ERR_THROTTLED": {
         "prefix": "ERR_THROTTLED",
         "body": [
            "ERR_THROTTLED$0"
         ],
-        "description": "ERR_THROTTLED"
+        "description": "Task has been throttled. Try again later."
     },
     "ESTATE_ACCESS_ALLOWED_AGENT_ADD": {
         "prefix": "ESTATE_ACCESS_ALLOWED_AGENT_ADD",
         "body": [
            "ESTATE_ACCESS_ALLOWED_AGENT_ADD$0"
         ],
-        "description": "ESTATE_ACCESS_ALLOWED_AGENT_ADD"
+        "description": "Add the agent to this estate's Allowed Residents list."
     },
     "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE": {
         "prefix": "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE",
         "body": [
            "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE$0"
         ],
-        "description": "ESTATE_ACCESS_ALLOWED_AGENT_REMOVE"
+        "description": "Remove the agent from this estate's Allowed Residents list."
     },
     "ESTATE_ACCESS_ALLOWED_GROUP_ADD": {
         "prefix": "ESTATE_ACCESS_ALLOWED_GROUP_ADD",
         "body": [
            "ESTATE_ACCESS_ALLOWED_GROUP_ADD$0"
         ],
-        "description": "ESTATE_ACCESS_ALLOWED_GROUP_ADD"
+        "description": "Add the group to this estate's Allowed groups list."
     },
     "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE": {
         "prefix": "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE",
         "body": [
            "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE$0"
         ],
-        "description": "ESTATE_ACCESS_ALLOWED_GROUP_REMOVE"
+        "description": "Remove the group from this estate's Allowed groups list."
     },
     "ESTATE_ACCESS_BANNED_AGENT_ADD": {
         "prefix": "ESTATE_ACCESS_BANNED_AGENT_ADD",
         "body": [
            "ESTATE_ACCESS_BANNED_AGENT_ADD$0"
         ],
-        "description": "ESTATE_ACCESS_BANNED_AGENT_ADD"
+        "description": "Add the agent to this estate's Banned residents list."
     },
     "ESTATE_ACCESS_BANNED_AGENT_REMOVE": {
         "prefix": "ESTATE_ACCESS_BANNED_AGENT_REMOVE",
         "body": [
            "ESTATE_ACCESS_BANNED_AGENT_REMOVE$0"
         ],
-        "description": "ESTATE_ACCESS_BANNED_AGENT_REMOVE"
+        "description": "Remove the agent from this estate's Banned residents list."
     },
     "FALSE": {
         "prefix": "FALSE",
@@ -5207,7 +5207,7 @@
         "body": [
            "FORCE_DIRECT_PATH$0"
         ],
-        "description": "FORCE_DIRECT_PATH"
+        "description": "Makes character navigate in a straight line toward pos. May be set to TRUE or FALSE."
     },
     "HORIZONTAL": {
         "prefix": "HORIZONTAL",
@@ -5396,7 +5396,7 @@
         "body": [
            "JSON_DELETE$0"
         ],
-        "description": "JSON_DELETE"
+        "description": "Used with llJsonSetValue to remove a key-value pair."
     },
     "JSON_FALSE": {
         "prefix": "JSON_FALSE",
@@ -5410,7 +5410,7 @@
         "body": [
            "JSON_INVALID$0"
         ],
-        "description": "JSON_INVALID"
+        "description": "Value returned when inputs are not well formed."
     },
     "JSON_NULL": {
         "prefix": "JSON_NULL",
@@ -5578,35 +5578,35 @@
         "body": [
            "LINK_ALL_CHILDREN$0"
         ],
-        "description": "LINK_ALL_CHILDREN"
+        "description": "refers to all children, (everything but the root)"
     },
     "LINK_ALL_OTHERS": {
         "prefix": "LINK_ALL_OTHERS",
         "body": [
            "LINK_ALL_OTHERS$0"
         ],
-        "description": "LINK_ALL_OTHERS"
+        "description": "refers to all other prims"
     },
     "LINK_ROOT": {
         "prefix": "LINK_ROOT",
         "body": [
            "LINK_ROOT$0"
         ],
-        "description": "LINK_ROOT"
+        "description": "refers to the root prim in a multi-prim linked set"
     },
     "LINK_SET": {
         "prefix": "LINK_SET",
         "body": [
            "LINK_SET$0"
         ],
-        "description": "LINK_SET"
+        "description": "refers to all prims"
     },
     "LINK_THIS": {
         "prefix": "LINK_THIS",
         "body": [
            "LINK_THIS$0"
         ],
-        "description": "LINK_THIS"
+        "description": "refers to the prim the script is in"
     },
     "LIST_STAT_GEOMETRIC_MEAN": {
         "prefix": "LIST_STAT_GEOMETRIC_MEAN",
@@ -5697,35 +5697,35 @@
         "body": [
            "MASK_BASE$0"
         ],
-        "description": "MASK_BASE"
+        "description": "The base permissions."
     },
     "MASK_EVERYONE": {
         "prefix": "MASK_EVERYONE",
         "body": [
            "MASK_EVERYONE$0"
         ],
-        "description": "MASK_EVERYONE"
+        "description": "Permissions everyone has."
     },
     "MASK_GROUP": {
         "prefix": "MASK_GROUP",
         "body": [
            "MASK_GROUP$0"
         ],
-        "description": "MASK_GROUP"
+        "description": "Active group permissions."
     },
     "MASK_NEXT": {
         "prefix": "MASK_NEXT",
         "body": [
            "MASK_NEXT$0"
         ],
-        "description": "MASK_NEXT"
+        "description": "Permissions the next owner will have"
     },
     "MASK_OWNER": {
         "prefix": "MASK_OWNER",
         "body": [
            "MASK_OWNER$0"
         ],
-        "description": "MASK_OWNER"
+        "description": "Current owner permissions."
     },
     "NULL_KEY": {
         "prefix": "NULL_KEY",
@@ -5886,21 +5886,21 @@
         "body": [
            "OBJECT_RETURN_PARCEL$0"
         ],
-        "description": "OBJECT_RETURN_PARCEL"
+        "description": "Return all objects on the same parcel as the script which are owned by owner.\nThe script must be owned by an estate manager or over a parcel owned by the owner of the script."
     },
     "OBJECT_RETURN_PARCEL_OWNER": {
         "prefix": "OBJECT_RETURN_PARCEL_OWNER",
         "body": [
            "OBJECT_RETURN_PARCEL_OWNER$0"
         ],
-        "description": "OBJECT_RETURN_PARCEL_OWNER"
+        "description": "Return all objects owned by owner which are over parcels owned by the owner of the script."
     },
     "OBJECT_RETURN_REGION": {
         "prefix": "OBJECT_RETURN_REGION",
         "body": [
            "OBJECT_RETURN_REGION$0"
         ],
-        "description": "OBJECT_RETURN_REGION"
+        "description": "Return all objects in the region owned by owner.\nThe script must be owned by the estate owner or an estate manager."
     },
     "OBJECT_ROOT": {
         "prefix": "OBJECT_ROOT",
@@ -6383,7 +6383,7 @@
         "body": [
            "PATROL_PAUSE_AT_WAYPOINTS$0"
         ],
-        "description": "PATROL_PAUSE_AT_WAYPOINTS"
+        "description": "Whether the character should pause briefly after reaching each patrol point.\n- Parameters: [ integer boolean ]\n- Default: [ FALSE ]"
     },
     "PAYMENT_INFO_ON_FILE": {
         "prefix": "PAYMENT_INFO_ON_FILE",
@@ -6418,112 +6418,112 @@
         "body": [
            "PERMISSION_ATTACH$0"
         ],
-        "description": "PERMISSION_ATTACH"
+        "description": "attach/detach from agent"
     },
     "PERMISSION_CHANGE_LINKS": {
         "prefix": "PERMISSION_CHANGE_LINKS",
         "body": [
            "PERMISSION_CHANGE_LINKS$0"
         ],
-        "description": "PERMISSION_CHANGE_LINKS"
+        "description": "change links"
     },
     "PERMISSION_CONTROL_CAMERA": {
         "prefix": "PERMISSION_CONTROL_CAMERA",
         "body": [
            "PERMISSION_CONTROL_CAMERA$0"
         ],
-        "description": "PERMISSION_CONTROL_CAMERA"
+        "description": "control the agent's camera (must be sat on or attached; automatically revoked on stand or detach)"
     },
     "PERMISSION_DEBIT": {
         "prefix": "PERMISSION_DEBIT",
         "body": [
            "PERMISSION_DEBIT$0"
         ],
-        "description": "PERMISSION_DEBIT"
+        "description": "take money from agent's account"
     },
     "PERMISSION_OVERRIDE_ANIMATIONS": {
         "prefix": "PERMISSION_OVERRIDE_ANIMATIONS",
         "body": [
            "PERMISSION_OVERRIDE_ANIMATIONS$0"
         ],
-        "description": "PERMISSION_OVERRIDE_ANIMATIONS"
+        "description": "configure the overriding of default animations on agent"
     },
     "PERMISSION_RETURN_OBJECTS": {
         "prefix": "PERMISSION_RETURN_OBJECTS",
         "body": [
            "PERMISSION_RETURN_OBJECTS$0"
         ],
-        "description": "PERMISSION_RETURN_OBJECTS"
+        "description": "Used by llReturnObjectsByOwner and llReturnObjectsByID to return objects from parcels"
     },
     "PERMISSION_SILENT_ESTATE_MANAGEMENT": {
         "prefix": "PERMISSION_SILENT_ESTATE_MANAGEMENT",
         "body": [
            "PERMISSION_SILENT_ESTATE_MANAGEMENT$0"
         ],
-        "description": "PERMISSION_SILENT_ESTATE_MANAGEMENT"
+        "description": "manage estate access without notifying the owner of changes"
     },
     "PERMISSION_TAKE_CONTROLS": {
         "prefix": "PERMISSION_TAKE_CONTROLS",
         "body": [
            "PERMISSION_TAKE_CONTROLS$0"
         ],
-        "description": "PERMISSION_TAKE_CONTROLS"
+        "description": "take agent's controls"
     },
     "PERMISSION_TELEPORT": {
         "prefix": "PERMISSION_TELEPORT",
         "body": [
            "PERMISSION_TELEPORT$0"
         ],
-        "description": "PERMISSION_TELEPORT"
+        "description": "teleport the agent"
     },
     "PERMISSION_TRACK_CAMERA": {
         "prefix": "PERMISSION_TRACK_CAMERA",
         "body": [
            "PERMISSION_TRACK_CAMERA$0"
         ],
-        "description": "PERMISSION_TRACK_CAMERA"
+        "description": "track the agent's camera position and rotation"
     },
     "PERMISSION_TRIGGER_ANIMATION": {
         "prefix": "PERMISSION_TRIGGER_ANIMATION",
         "body": [
            "PERMISSION_TRIGGER_ANIMATION$0"
         ],
-        "description": "PERMISSION_TRIGGER_ANIMATION"
+        "description": "start or stop Animations on agent"
     },
     "PERM_ALL": {
         "prefix": "PERM_ALL",
         "body": [
            "PERM_ALL$0"
         ],
-        "description": "PERM_ALL"
+        "description": "Move/Modify/Copy/Transfer permissions"
     },
     "PERM_COPY": {
         "prefix": "PERM_COPY",
         "body": [
            "PERM_COPY$0"
         ],
-        "description": "PERM_COPY"
+        "description": "Copy permission"
     },
     "PERM_MODIFY": {
         "prefix": "PERM_MODIFY",
         "body": [
            "PERM_MODIFY$0"
         ],
-        "description": "PERM_MODIFY"
+        "description": "Modify permission"
     },
     "PERM_MOVE": {
         "prefix": "PERM_MOVE",
         "body": [
            "PERM_MOVE$0"
         ],
-        "description": "PERM_MOVE"
+        "description": "Move permission"
     },
     "PERM_TRANSFER": {
         "prefix": "PERM_TRANSFER",
         "body": [
            "PERM_TRANSFER$0"
         ],
-        "description": "PERM_TRANSFER"
+        "description": "Transfer permission"
     },
     "PI": {
         "prefix": "PI",
@@ -6859,7 +6859,7 @@
         "body": [
            "PRIM_MEDIA_ALT_IMAGE_ENABLE$0"
         ],
-        "description": "PRIM_MEDIA_ALT_IMAGE_ENABLE"
+        "description": "Sets the default image state (the image that the user sees before a piece of media is active) for the chosen face. The default image is specified by Second Life's server for that media type.\nNote: This flag is not currently implemented"
     },
     "PRIM_MEDIA_AUTO_LOOP": {
         "prefix": "PRIM_MEDIA_AUTO_LOOP",
@@ -7300,14 +7300,14 @@
         "body": [
            "PROFILE_NONE$0"
         ],
-        "description": "PROFILE_NONE"
+        "description": "Disables profiling"
     },
     "PROFILE_SCRIPT_MEMORY": {
         "prefix": "PROFILE_SCRIPT_MEMORY",
         "body": [
            "PROFILE_SCRIPT_MEMORY$0"
         ],
-        "description": "PROFILE_SCRIPT_MEMORY"
+        "description": "Enables memory profiling"
     },
     "PUBLIC_CHANNEL": {
         "prefix": "PUBLIC_CHANNEL",
@@ -7328,35 +7328,35 @@
         "body": [
            "RCERR_CAST_TIME_EXCEEDED$0"
         ],
-        "description": "RCERR_CAST_TIME_EXCEEDED"
+        "description": "The raycast failed because the parcel or agent has exceeded the maximum time allowed for raycasting. This resource pool is continually replenished, so waiting a few frames and retrying is likely to succeed."
     },
     "RCERR_SIM_PERF_LOW": {
         "prefix": "RCERR_SIM_PERF_LOW",
         "body": [
            "RCERR_SIM_PERF_LOW$0"
         ],
-        "description": "RCERR_SIM_PERF_LOW"
+        "description": "The raycast failed because simulator performance is low. Wait a while and then try again. If possible reduce the scene complexity."
     },
     "RCERR_UNKNOWN": {
         "prefix": "RCERR_UNKNOWN",
         "body": [
            "RCERR_UNKNOWN$0"
         ],
-        "description": "RCERR_UNKNOWN"
+        "description": "The raycast failed for an unspecified reason. Please submit a bug report."
     },
     "RC_DATA_FLAGS": {
         "prefix": "RC_DATA_FLAGS",
         "body": [
            "RC_DATA_FLAGS$0"
         ],
-        "description": "RC_DATA_FLAGS"
+        "description": "Described in the RC_DATA_FLAGS section."
     },
     "RC_DETECT_PHANTOM": {
         "prefix": "RC_DETECT_PHANTOM",
         "body": [
            "RC_DETECT_PHANTOM$0"
         ],
-        "description": "RC_DETECT_PHANTOM"
+        "description": "Set to TRUE (or nonzero) to detect phantom AND volume detect objects. It is not possible to detect only phantom objects or only volume detect objects. If set to TRUE, phantom and volume detect objects will always be detected, even if RC_REJECT_NONPHYSICAL and RC_REJECT_PHYSICAL are set in RC_REJECT_TYPES."
     },
     "RC_GET_LINK_NUM": {
         "prefix": "RC_GET_LINK_NUM",
@@ -7384,7 +7384,7 @@
         "body": [
            "RC_MAX_HITS$0"
         ],
-        "description": "RC_MAX_HITS"
+        "description": "Maximum number of hits to return. Maximum value is 256. To avoid performance issues, keep it small."
     },
     "RC_REJECT_AGENTS": {
         "prefix": "RC_REJECT_AGENTS",
@@ -7419,7 +7419,7 @@
         "body": [
            "RC_REJECT_TYPES$0"
         ],
-        "description": "RC_REJECT_TYPES"
+        "description": "Mask used to ignore specific types of objects (and avatars)."
     },
     "REGION_FLAG_ALLOW_DAMAGE": {
         "prefix": "REGION_FLAG_ALLOW_DAMAGE",
@@ -7489,21 +7489,21 @@
         "body": [
            "REMOTE_DATA_CHANNEL$0"
         ],
-        "description": "REMOTE_DATA_CHANNEL"
-    },
-    "REMOTE_DATA_REPLY": {
-        "prefix": "REMOTE_DATA_REPLY",
-        "body": [
-           "REMOTE_DATA_REPLY$0"
-        ],
-        "description": "REMOTE_DATA_REPLY"
+        "description": "The integer constant REMOTE_DATA_CHANNEL has the value 1"
     },
     "REMOTE_DATA_REQUEST": {
         "prefix": "REMOTE_DATA_REQUEST",
         "body": [
            "REMOTE_DATA_REQUEST$0"
         ],
-        "description": "REMOTE_DATA_REQUEST"
+        "description": "The integer constant REMOTE_DATA_REPLY has the value 2"
+    },
+    "REMOTE_DATA_REPLY": {
+        "prefix": "REMOTE_DATA_REPLY",
+        "body": [
+           "REMOTE_DATA_REPLY$0"
+        ],
+        "description": "The integer constant REMOTE_DATA_REPLY has the value 3"
     },
     "REVERSE": {
         "prefix": "REVERSE",
@@ -7538,7 +7538,7 @@
         "body": [
            "SIM_STAT_PCT_CHARS_STEPPED$0"
         ],
-        "description": "SIM_STAT_PCT_CHARS_STEPPED"
+        "description": "The % of pathfinding characters updated each frame, averaged over the last minute. The value corresponds to the \"Characters Updated\" stat in the viewer's Statistics Bar.\n- Posible Return: [0.0, 100.0]"
     },
     "SMOOTH": {
         "prefix": "SMOOTH",
@@ -7573,7 +7573,7 @@
         "body": [
            "STATUS_BOUNDS_ERROR$0"
         ],
-        "description": "STATUS_BOUNDS_ERROR"
+        "description": "Argument(s) passed to function had a bounds error"
     },
     "STATUS_CAST_SHADOWS": {
         "prefix": "STATUS_CAST_SHADOWS",
@@ -7594,35 +7594,35 @@
         "body": [
            "STATUS_INTERNAL_ERROR$0"
         ],
-        "description": "STATUS_INTERNAL_ERROR"
+        "description": "An internal error occurred"
     },
     "STATUS_MALFORMED_PARAMS": {
         "prefix": "STATUS_MALFORMED_PARAMS",
         "body": [
            "STATUS_MALFORMED_PARAMS$0"
         ],
-        "description": "STATUS_MALFORMED_PARAMS"
+        "description": "Function was called with malformed parameters"
     },
     "STATUS_NOT_FOUND": {
         "prefix": "STATUS_NOT_FOUND",
         "body": [
            "STATUS_NOT_FOUND$0"
         ],
-        "description": "STATUS_NOT_FOUND"
+        "description": "Object or other item was not found"
     },
     "STATUS_NOT_SUPPORTED": {
         "prefix": "STATUS_NOT_SUPPORTED",
         "body": [
            "STATUS_NOT_SUPPORTED$0"
         ],
-        "description": "STATUS_NOT_SUPPORTED"
+        "description": "Feature not supported"
     },
     "STATUS_OK": {
         "prefix": "STATUS_OK",
         "body": [
            "STATUS_OK$0"
         ],
-        "description": "STATUS_OK"
+        "description": "Result of function call was success"
     },
     "STATUS_PHANTOM": {
         "prefix": "STATUS_PHANTOM",
@@ -7678,14 +7678,14 @@
         "body": [
            "STATUS_TYPE_MISMATCH$0"
         ],
-        "description": "STATUS_TYPE_MISMATCH"
+        "description": "Argument(s) passed to function had a type mismatch"
     },
     "STATUS_WHITELIST_FAILED": {
         "prefix": "STATUS_WHITELIST_FAILED",
         "body": [
            "STATUS_WHITELIST_FAILED$0"
         ],
-        "description": "STATUS_WHITELIST_FAILED"
+        "description": "Whitelist Failed"
     },
     "STRING_TRIM": {
         "prefix": "STRING_TRIM",
@@ -7769,7 +7769,28 @@
         "body": [
            "TRAVERSAL_TYPE$0"
         ],
-        "description": "TRAVERSAL_TYPE"
+        "description": "Controls the speed at which characters moves on terrain that is less than 100% walkable will move faster (e.g., a cat crossing a street) or slower (e.g., a car driving in a swamp).\nTo use _FAST or _SLOW, you must specify a CHARACTER_TYPE.\n- Default: TRAVERSAL_TYPE_SLOW\n- Range / Values: TRAVERSAL_TYPE_FAST, TRAVERSAL_TYPE_SLOW, TRAVERSAL_TYPE_NONE"
+    },
+    "TRAVERSAL_TYPE_FAST": {
+        "prefix": "TRAVERSAL_TYPE_FAST",
+        "body": [
+           "TRAVERSAL_TYPE_FAST$0"
+        ],
+        "description": "TRAVERSAL_TYPE_FAST"
+    },
+    "TRAVERSAL_TYPE_SLOW": {
+        "prefix": "TRAVERSAL_TYPE_SLOW",
+        "body": [
+           "TRAVERSAL_TYPE_SLOW$0"
+        ],
+        "description": "TRAVERSAL_TYPE_SLOW"
+    },
+    "TRAVERSAL_TYPE_NONE": {
+        "prefix": "TRAVERSAL_TYPE_NONE",
+        "body": [
+           "TRAVERSAL_TYPE_NONE$0"
+        ],
+        "description": "TRAVERSAL_TYPE_NONE"
     },
     "TRUE": {
         "prefix": "TRUE",
@@ -8284,6 +8305,479 @@
            "XP_ERROR_REQUEST_PERM_TIMEOUT$0"
         ],
         "description": "The request for experience permissions was ignored."
+    },
+
+
+
+    "CHARACTER_CMD_JUMP": {
+        "prefix": "CHARACTER_CMD_JUMP",
+        "body": [
+           "CHARACTER_CMD_JUMP$0"
+        ],
+        "description": "Makes the character jump.\nThe option list is required to start with a height parameter: [float height]\n• float height – height to jump, between 0.1m and 2.0m"
+    },
+    "CHARACTER_CMD_SMOOTH_STOP": {
+        "prefix": "CHARACTER_CMD_SMOOTH_STOP",
+        "body": [
+           "CHARACTER_CMD_SMOOTH_STOP$0"
+        ],
+        "description": "Stops any current pathfinding operation in a smooth like fashion."
+    },
+    "CHARACTER_CMD_STOP": {
+        "prefix": "CHARACTER_CMD_STOP",
+        "body": [
+           "CHARACTER_CMD_STOP$0"
+        ],
+        "description": "Stops any current pathfinding operation."
+    },
+
+
+    
+    "GCNP_RADIUS": {
+        "prefix": "GCNP_RADIUS",
+        "body": [
+           "GCNP_RADIUS$0"
+        ],
+        "description": "Limits how far out to search for a navigation point.\n- Parameters: [ float distance ]\n- Default: [ 20.0 ]"
+    },
+    "GCNP_STATIC": {
+        "prefix": "GCNP_STATIC",
+        "body": [
+           "GCNP_STATIC$0"
+        ],
+        "description": "Specifies whether the test should use the static or dynamic nav mesh. In the static case, all dynamic obstacles are ignored.\n- Parameters: [ integer use_static_mesh ]\n- Default: [ FALSE ]"
+    },
+
+
+
+    
+    "PURSUIT_OFFSET": {
+        "prefix": "PURSUIT_OFFSET",
+        "body": [
+           "PURSUIT_OFFSET$0"
+        ],
+        "description": "Go to a position offset from the target.\n- Default Value: ZERO_VECTOR\n- Usage: [PURSUIT_OFFSET, vector offset]"
+    },
+    "REQUIRE_LINE_OF_SIGHT": {
+        "prefix": "REQUIRE_LINE_OF_SIGHT",
+        "body": [
+           "REQUIRE_LINE_OF_SIGHT$0"
+        ],
+        "description": "Define whether the character needs a physical line-of-sight to give chase. When enabled, the character will not pick a new target position while there is a something solid between the character and the target object/agent.\n- Default Value: FALSE\n- Usage: [REQUIRE_LINE_OF_SIGHT, integer boolean]"
+    },
+    "PURSUIT_FUZZ_FACTOR": {
+        "prefix": "PURSUIT_FUZZ_FACTOR",
+        "body": [
+           "PURSUIT_FUZZ_FACTOR$0"
+        ],
+        "description": "Selects a random destination near the PURSUIT_OFFSET. The valid fuzz factor range is from 0 to 1, where 1 is most random. This option requires a nonzero PURSUIT_OFFSET.\n- Default Value: 0.0\n- Usage: [PURSUIT_FUZZ_FACTOR, float factor]"
+    },
+    "PURSUIT_INTERCEPT": {
+        "prefix": "PURSUIT_INTERCEPT",
+        "body": [
+           "PURSUIT_INTERCEPT$0"
+        ],
+        "description": "Define whether the character attempts to predict the target's future location.\n- Default Value: FALSE\n- Usage: [PURSUIT_INTERCEPT, integer boolean]"
+    },
+    "PURSUIT_GOAL_TOLERANCE": {
+        "prefix": "PURSUIT_GOAL_TOLERANCE",
+        "body": [
+           "PURSUIT_GOAL_TOLERANCE$0"
+        ],
+        "description": "Defines approximately how close the character must be to the current goal to consider itself to be at the desired position. The valid range is from 0.25 to 10m.\n- Default Value: Default is proportional to character size\n- Usage: [PURSUIT_GOAL_TOLERANCE, float tolerance]"
+    },
+
+
+
+    "PRIM_MEDIA_CONTROLS": {
+        "prefix": "PRIM_MEDIA_CONTROLS",
+        "body": [
+           "PRIM_MEDIA_CONTROLS$0"
+        ],
+        "description": "PRIM_MEDIA_CONTROLS"
+    },
+    "PRIM_MEDIA_CONTROLS_STANDARD": {
+        "prefix": "PRIM_MEDIA_CONTROLS_STANDARD",
+        "body": [
+           "PRIM_MEDIA_CONTROLS_STANDARD$0"
+        ],
+        "description": "PRIM_MEDIA_CONTROLS_STANDARD"
+    },
+    "PRIM_MEDIA_CONTROLS_MINI": {
+        "prefix": "PRIM_MEDIA_CONTROLS_MINI",
+        "body": [
+           "PRIM_MEDIA_CONTROLS_MINI$0"
+        ],
+        "description": "PRIM_MEDIA_CONTROLS_MINI"
+    },
+
+
+
+    "AVOID_CHARACTERS": {
+        "prefix": "AVOID_CHARACTERS",
+        "body": [
+           "AVOID_CHARACTERS$0"
+        ],
+        "description": "AVOID_CHARACTERS"
+    },
+    "AVOID_DYNAMIC_OBSTACLES": {
+        "prefix": "AVOID_DYNAMIC_OBSTACLES",
+        "body": [
+           "AVOID_DYNAMIC_OBSTACLES$0"
+        ],
+        "description": "AVOID_DYNAMIC_OBSTACLES"
+    },
+    "AVOID_NONE": {
+        "prefix": "AVOID_NONE",
+        "body": [
+           "AVOID_NONE$0"
+        ],
+        "description": "AVOID_NONE"
+    },
+    
+
+
+    "SKY_TRACKS": {
+        "prefix": "SKY_TRACKS",
+        "body": [
+           "SKY_TRACKS$0"
+        ],
+        "description": "float sky2, float sky3, float sky4\n\nAltitudes for sky transitions in the region."
+    },
+    "SKY_AMBIENT": {
+        "prefix": "SKY_AMBIENT",
+        "body": [
+           "SKY_AMBIENT$0"
+        ],
+        "description": "vector ambient_color\n\nThe ambient color of the environment."
+    },
+    "SKY_TEXTURE_DEFAULTS": {
+        "prefix": "SKY_TEXTURE_DEFAULTS",
+        "body": [
+           "SKY_TEXTURE_DEFAULTS$0"
+        ],
+        "description": "integer bloom_is_default, integer halo_is_default, integer rainbow_is_default\n\nChecks if the textures are currently set to use the default. For default values, the returned integer is 1. If the texture uses something other than the default, the returned value is 0."
+    },
+    "SKY_CLOUDS": {
+        "prefix": "SKY_CLOUDS",
+        "body": [
+           "SKY_CLOUDS$0"
+        ],
+        "description": "vector color, float coverage, float scale, float variance, vector scroll, vector density, vector detail, integer is_default\n\nEnvironmental cloud information.\n- color: The color used for the clouds.\n  range = [<0,0,0>, <1,1,1>]\n- coverage: The coverage percentage.\n  range = [0, 1]\n- scale: The scaling applied to the cloud textures.\n  range = (0 - 3]\n- variance: A randomizing factor applied to the main cloud layer\n  range = [0, 1]\n- scroll: The scroll speed of the clouds.\n- X is east/west\n  range = [<-50,-50>, <50,50>]\n- Y is north/south\n- Z is unused\n- density: The X/Y and D parameter used to generate cloud density\n  range = [<0,0,0>, <1,1,3>]\n- detail: The X/Y and D parameter used to generate cloud details.\n  range = [<0,0,0>, <1,1,1>]\n- is_default: 1 if the clouds are using the default texture."
+    },
+    "SKY_CLOUD_TEXTURE": {
+        "prefix": "SKY_CLOUD_TEXTURE",
+        "body": [
+           "SKY_CLOUD_TEXTURE$0"
+        ],
+        "description": "string texture_ident\n\nName of item in inventory or UUID for texture to be used for the clouds."
+    },
+    "SKY_DOME": {
+        "prefix": "SKY_DOME",
+        "body": [
+           "SKY_DOME$0"
+        ],
+        "description": "float offset, float radius, float max_altitude\n\nSky dome information.\n- offset: offset applied to the sky dome.\n  range = [0,1]\n- radius: radius of the sky dome.\n  range = [1000,2000]\n- maximum altitude: altitude of the sky dome.\n  range = [0,10000]"
+    },
+    "SKY_GAMMA": {
+        "prefix": "SKY_GAMMA",
+        "body": [
+           "SKY_GAMMA$0"
+        ],
+        "description": "float gamma\n\nThe gamma value applied to the scene.\nrange = [0,20]"
+    },
+    "SKY_GLOW": {
+        "prefix": "SKY_GLOW",
+        "body": [
+           "SKY_GLOW$0"
+        ],
+        "description": "float glow_size, float glow_focus\n\nGlow applied to the sun and moon.\n- glow_size: size of glow effect,\n  range = [0.2, 40]\n- glow_focus: focus of glow effect\n  Range [-10, 10]"
+    },
+    "SKY_MOON": {
+        "prefix": "SKY_MOON",
+        "body": [
+           "SKY_MOON$0"
+        ],
+        "description": "rotation rot, float scale, float brightness, integer is_default_texture, vector direction, vector ambient_color, vector diffuse_color\n\nDetailed moon information\n- rot: The current rotation applied to the moon.\n  Normalized rotation.\n- scale: The current scale applied to the moon's texture\n  range = [0.25, 20]\n- brightness: The moon's brightness\n  range = [0,1]\n- is_default_texture: 1 if the moon texture is set to the default. 0 otherwise\n- direction: A unit vector pointing at the moon.\n- ambient_color: The ambient color of the moon\n- diffuse_color: The diffuse color applied to the moon."
+    },
+    "SKY_MOON_TEXTURE": {
+        "prefix": "SKY_MOON_TEXTURE",
+        "body": [
+           "SKY_MOON_TEXTURE$0"
+        ],
+        "description": "string texture_ident\n\nName of texture in inventory or UUID for texture to be used for the moon."
+    },
+    "SKY_STAR_BRIGHTNESS": {
+        "prefix": "SKY_STAR_BRIGHTNESS",
+        "body": [
+           "SKY_STAR_BRIGHTNESS$0"
+        ],
+        "description": "float brightness\n\nBrightness value applied to stars.\nrange = [0,500]"
+    },
+    "SKY_SUN": {
+        "prefix": "SKY_SUN",
+        "body": [
+           "SKY_SUN$0"
+        ],
+        "description": "rotation rot, float scale, vector sun_color, integer is_default_texture, vector direction, vector ambient_color, vector diffuse_color\n\nDetailed sun information\n- rot: The current rotation applied to the sun.\n  Normalized rotation.\n- scale: The current scale applied to the sun's texture\n  range = [0.25, 20]\n- sun_color: The sun's color.\n range = [<0,0,0>, <1,1,1>]\n- is_default_texture: 1 if the sun texture is set to the default. 0 otherwise\n- direction: A unit vector pointing at the sun.\n- ambient_color: The ambient color of the sun.\n- diffuse_color: The diffuse color applied to the sun."
+    },
+    "SKY_PLANET": {
+        "prefix": "SKY_PLANET",
+        "body": [
+           "SKY_PLANET$0"
+        ],
+        "description": "float planet_radius, float sky_bottom_radius, float sky_top_radius\n\nPlanet information used in rendering the sky\n- planet_radius: range = [1000, 32768]\n- sky_bottom_radius: range = [1000, 32768]\n- sky_top_radius: range = [1000, 32768]"
+    },
+    "SKY_REFRACTION": {
+        "prefix": "SKY_REFRACTION",
+        "body": [
+           "SKY_REFRACTION$0"
+        ],
+        "description": "float moisture_level, float droplet_radius, float ice_level\n\nSky refraction parameters for rainbows and optical effects.\n- moisture_level: range = [0, 1]\n- droplet_radius: range = [5, 1000]\n- ice_level: range = [0, 1]"
+    },
+    "SKY_LIGHT": {
+        "prefix": "SKY_LIGHT",
+        "body": [
+           "SKY_LIGHT$0"
+        ],
+        "description": "vector light_direction, vector total_ambient\n\nMiscellaneous lighting values\n- light_direction: unit vector indicating the direction of the dominant light source."
+    },
+    "WATER_BLUR_MULTIPLIER": {
+        "prefix": "WATER_BLUR_MULTIPLIER",
+        "body": [
+           "WATER_BLUR_MULTIPLIER$0"
+        ],
+        "description": "float multiplier\n\nMultiplier applied to blur the scene when under water.\nrange = [-0.5, 0.5]"
+    },
+    "WATER_FOG": {
+        "prefix": "WATER_FOG",
+        "body": [
+           "WATER_FOG$0"
+        ],
+        "description": "vector color, float density, float modulation\n\nFog parameters applied when underwater\n- color: The color of the underwater fog\n  range = [<0,0,0>, <1,1,1>]\n- density: Density exponent applied to the fog\n  range = [-10, 10]\n- modulation:\n  range = [0, 20]"
+    },
+    "WATER_FRESNEL": {
+        "prefix": "WATER_FRESNEL",
+        "body": [
+           "WATER_FRESNEL$0"
+        ],
+        "description": "float offset, float scale\n\nFresnel scattering applied to the surface of the water.\n- offset: range = [0,1]\n- scale: range = [0,1]"
+    },
+    "WATER_TEXTURE_DEFAULTS": {
+        "prefix": "WATER_TEXTURE_DEFAULTS",
+        "body": [
+           "WATER_TEXTURE_DEFAULTS$0"
+        ],
+        "description": "integer normal_is_default, integer transparent_is_default\n\nChecks if the textures are currently set to use the default. For default values the returned integer is 1, if the texture uses something other than the default this value is 0."
+    },
+    "WATER_NORMAL_TEXTURE": {
+        "prefix": "WATER_NORMAL_TEXTURE",
+        "body": [
+           "WATER_NORMAL_TEXTURE$0"
+        ],
+        "description": "string texture_ident\n\nName of texture in inventory or UUID of texture to be used for the water normal."
+    },
+    "WATER_NORMAL_SCALE": {
+        "prefix": "WATER_NORMAL_SCALE",
+        "body": [
+           "WATER_NORMAL_SCALE$0"
+        ],
+        "description": "vector scale\n\nScaling applied to the water normal map.\nrange = [<0,0,0>, <10,10,10>]"
+    },
+    "WATER_REFRACTION": {
+        "prefix": "WATER_REFRACTION",
+        "body": [
+           "WATER_REFRACTION$0"
+        ],
+        "description": "float scale_above, float scale_below\n\nRefraction factors when looking through the surface of the water.\n- scale_above: range = [0, 3]\n- scale_below: range = [0, 3]"
+    },
+    "WATER_WAVE_DIRECTION": {
+        "prefix": "WATER_WAVE_DIRECTION",
+        "body": [
+           "WATER_WAVE_DIRECTION$0"
+        ],
+        "description": "vector large_wave, vector small_wave\n\nVector for the directions of the waves Y represents north/south and X represents movement east/west.\n- large_wave: Large wave speed and direction.\n  range = [<-20, -20>, <20, 20>]\n- small_wave: Small wave speed and direction.\n  range = [<-20, -20>, <20, 20>]"
+    },
+    "ENVIRONMENT_DAYINFO": {
+        "prefix": "ENVIRONMENT_DAYINFO",
+        "body": [
+           "ENVIRONMENT_DAYINFO$0"
+        ],
+        "description": "integer day_length, integer day_offset, float secs_since_midnight\n\nCurrent time and day information\n- day_length: Number of seconds in the environments day cycle.\n- day_offset: Number of seconds day cycle is offset from GMT.\n- secs_since_midnight: Number of seconds elapsed since the last day cycle midnight."
+    },
+
+
+
+    
+    "ENV_NOT_EXPERIENCE": {
+        "prefix": "ENV_NOT_EXPERIENCE",
+        "body": [
+           "ENV_NOT_EXPERIENCE$0"
+        ],
+        "description": "The script is not running as part of an experience with a valid experience key."
+    },
+    "ENV_NO_EXPERIENCE_PERMISSION": {
+        "prefix": "ENV_NO_EXPERIENCE_PERMISSION",
+        "body": [
+           "ENV_NO_EXPERIENCE_PERMISSION$0"
+        ],
+        "description": "The agent has not granted permission."
+    },
+    "ENV_NO_ENVIRONMENT": {
+        "prefix": "ENV_NO_ENVIRONMENT",
+        "body": [
+           "ENV_NO_ENVIRONMENT$0"
+        ],
+        "description": "The environment inventory object could not be found."
+    },
+    "ENV_INVALID_AGENT": {
+        "prefix": "ENV_INVALID_AGENT",
+        "body": [
+           "ENV_INVALID_AGENT$0"
+        ],
+        "description": "Unable to find specified agent."
+    },
+    "ENV_NO_EXPERIENCE_LAND": {
+        "prefix": "ENV_NO_EXPERIENCE_LAND",
+        "body": [
+           "ENV_NO_EXPERIENCE_LAND$0"
+        ],
+        "description": "The experience has not been enabled or can not run on the land."
+    },
+    
+
+
+    "WANDER_PAUSE_AT_WAYPOINTS": {
+        "prefix": "WANDER_PAUSE_AT_WAYPOINTS",
+        "body": [
+           "WANDER_PAUSE_AT_WAYPOINTS$0"
+        ],
+        "description": "Whether the character should pause after reaching each wander waypoint."
+    },
+
+
+
+    "PU_SLOWDOWN_DISTANCE_REACHED": {
+        "prefix": "PU_SLOWDOWN_DISTANCE_REACHED",
+        "body": [
+           "PU_SLOWDOWN_DISTANCE_REACHED$0"
+        ],
+        "description": "Character is near current goal."
+    },
+    "PU_GOAL_REACHED": {
+        "prefix": "PU_GOAL_REACHED",
+        "body": [
+           "PU_GOAL_REACHED$0"
+        ],
+        "description": "Character has reached the goal and will stop or choose a new goal (if wandering)."
+    },
+    "PU_FAILURE_INVALID_START": {
+        "prefix": "PU_FAILURE_INVALID_START",
+        "body": [
+           "PU_FAILURE_INVALID_START$0"
+        ],
+        "description": "Character cannot navigate from the current location - e.g., the character is off the navmesh or too high above it."
+    },
+    "PU_FAILURE_INVALID_GOAL": {
+        "prefix": "PU_FAILURE_INVALID_GOAL",
+        "body": [
+           "PU_FAILURE_INVALID_GOAL$0"
+        ],
+        "description": "Goal is not on the navmesh and cannot be reached."
+    },
+    "PU_FAILURE_UNREACHABLE": {
+        "prefix": "PU_FAILURE_UNREACHABLE",
+        "body": [
+           "PU_FAILURE_UNREACHABLE$0"
+        ],
+        "description": "Goal is no longer reachable for some reason - e.g., an obstacle blocks the path."
+    },
+    "PU_FAILURE_TARGET_GONE": {
+        "prefix": "PU_SLOWDOWN_DISTANCE_REACHED",
+        "body": [
+           "PU_SLOWDOWN_DISTANCE_REACHED$0"
+        ],
+        "description": "Target (for llPursue or llEvade) can no longer be tracked - e.g., it left the region or is an avatar that is now more than about 30m outside the region."
+    },
+    "PU_FAILURE_NO_VALID_DESTINATION": {
+        "prefix": "PU_FAILURE_NO_VALID_DESTINATION",
+        "body": [
+           "PU_FAILURE_NO_VALID_DESTINATION$0"
+        ],
+        "description": "There's no good place for the character to go - e.g., it is patrolling and all the patrol points are now unreachable."
+    },
+    "PU_EVADE_HIDDEN": {
+        "prefix": "PU_EVADE_HIDDEN",
+        "body": [
+           "PU_EVADE_HIDDEN$0"
+        ],
+        "description": "Triggered when an llEvade character thinks it has hidden from its pursuer."
+    },
+    "PU_EVADE_SPOTTED": {
+        "prefix": "PU_EVADE_SPOTTED",
+        "body": [
+           "PU_EVADE_SPOTTED$0"
+        ],
+        "description": "Triggered when an llEvade character switches from hiding to running"
+    },
+    "PU_FAILURE_NO_NAVMESH": {
+        "prefix": "PU_FAILURE_NO_NAVMESH",
+        "body": [
+           "PU_FAILURE_NO_NAVMESH$0"
+        ],
+        "description": "This is a fatal error reported to a character when there is no navmesh for the region. This usually indicates a server failure and users should file a bug report and include the time and region in which they received this message."
+    },
+    "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED": {
+        "prefix": "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED",
+        "body": [
+           "PU_FAILURE_DYNAMIC_PATHFINDING_DISABLED$0"
+        ],
+        "description": "Triggered when a character enters a region with dynamic pathfinding disabled. Dynamic pathfinding can be toggled by estate managers via the 'dynamic_pathfinding' option in the Region Debug Console."
+    },
+    "PU_FAILURE_PARCEL_UNREACHABLE": {
+        "prefix": "PU_FAILURE_PARCEL_UNREACHABLE",
+        "body": [
+           "PU_FAILURE_PARCEL_UNREACHABLE$0"
+        ],
+        "description": "Triggered when a character failed to enter a parcel because it is not allowed to enter, e.g. because the parcel is already full or because object entry was disabled after the navmesh was baked."
+    },
+    "PU_FAILURE_OTHER": {
+        "prefix": "PU_FAILURE_OTHER",
+        "body": [
+           "PU_FAILURE_OTHER$0"
+        ],
+        "description": "Other failure."
+    },
+
+
+
+    "DENSITY": {
+        "prefix": "DENSITY",
+        "body": [
+           "DENSITY$0"
+        ],
+        "description": "Indicates that density parameter is enabled and will override the previous value."
+    },
+    "FRICTION": {
+        "prefix": "FRICTION",
+        "body": [
+           "FRICTION$0"
+        ],
+        "description": "Indicates that friction parameter is enabled and will override the previous value."
+    },
+    "RESTITUTION": {
+        "prefix": "RESTITUTION",
+        "body": [
+           "RESTITUTION$0"
+        ],
+        "description": "Indicates that restitution parameter is enabled and will override the previous value."
+    },
+    "GRAVITY_MULTIPLIER": {
+        "prefix": "GRAVITY_MULTIPLIER",
+        "body": [
+           "GRAVITY_MULTIPLIER$0"
+        ],
+        "description": "Indicates that gravity_multiplier parameter is enabled and will override the previous value."
     },
 
 
