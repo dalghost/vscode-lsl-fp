@@ -1,10 +1,10 @@
 # LSL-FP
 
-This extension adds syntaxes Highlighting and Code Snippeis for Firestorm LSL Preprocessor
+This extension adds syntaxes Highlighting and Code Snippets for Firestorm LSL Preprocessor
 
 ## Features
 
-Support for Firestorm LSL Preprocessor syntaxes Highlighting and Code Snippeis
+Support for Firestorm LSL Preprocessor syntaxes Highlighting and Code Snippets
 
 Image Sample:
 

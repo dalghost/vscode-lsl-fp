@@ -9,7 +9,7 @@ All notable changes to the "lsl" extension will be documented in this file.
 
 ## [1.1.3] - 2019-04-19
 ### Added
-- Added Code Snippents for Missing Constants
+- Added Code Snippets for Missing Constants
 
 ## [1.1.2] - 2019-04-19
 ### Fixed
