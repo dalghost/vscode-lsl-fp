@@ -29,8 +29,11 @@ Image Sample:
 ## Release Notes
 
 
+### 1.2.0 (2019-04-29)
+- Added Code Snippets for "pragma once" implement
+
 ### 1.1.3 (2019-04-19)
-- Added Code Snippents for Missing Constants
+- Added Code Snippets for Missing Constants
 
 ### 1.1.2 (2019-04-19)
 - Fixed listen parameter in Code Snippets
@@ -40,9 +43,9 @@ Image Sample:
 - Remove Syntax Highlight for junk keywords
 
 ### 1.1.0 (2019-04-10)
-- Added Code Snippents for LSL Event
-- Added Code Snippents for XP Constants
-- Added Code Snippents for llTransfer* Function Error Tag Constants
+- Added Code Snippets for LSL Event
+- Added Code Snippets for XP Constants
+- Added Code Snippets for llTransfer* Function Error Tag Constants
 
 ### 1.0.0 (2019-04-10)
 

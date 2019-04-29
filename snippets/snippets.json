@@ -1,4 +1,20 @@
 {
+    "Pragma Onse": {
+        "prefix": "pragma once",
+        "body": [
+            "#ifndef ${1:FILE_INDENTIFIER}",
+            "#define ${1:FILE_INDENTIFIER}",
+            "",
+            "",
+            "$0",
+            "",
+            "",
+            "#endif // ${1:FILE_INDENTIFIER}",
+            ""
+        ],
+        "description": "pragma once implement"
+    },
+
     "Float Casting Preprocessor": {
         "prefix": "float()",
         "body": [
