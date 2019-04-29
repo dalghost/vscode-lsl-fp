@@ -29,6 +29,9 @@ Image Sample:
 ## Release Notes
 
 
+### 1.2.1 (2019-04-29)
+- Fixed switch scope in Code Snippets
+
 ### 1.2.0 (2019-04-29)
 - Added Code Snippets for "pragma once" implement
 

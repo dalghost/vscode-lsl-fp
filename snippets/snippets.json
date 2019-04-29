@@ -378,6 +378,7 @@
         "prefix": "switch",
         "body": [
             "switch (${1:value})",
+            "{",
             "\tcase (${2:case}):",
             "\t{",
             "\t\t$0",
@@ -386,7 +387,8 @@
             "\tdefault:",
             "\t{",
             "\t\tbreak;",
-            "\t}"
+            "\t}",
+            "}"
         ],
         "description": "Switch Statement"
     },

@@ -7,6 +7,10 @@ All notable changes to the "lsl" extension will be documented in this file.
 - Added Code Snippets for LSL All Constants Description.
 
 
+## [1.2.1] - 2019-04-19
+### Fixed
+- Fixed switch scope in Code Snippets
+
 ## [1.2.0] - 2019-04-29
 ### Added
 - Added Code Snippets for "pragma once" implement
